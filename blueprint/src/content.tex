@@ -23,13 +23,20 @@
 
   
   \section{Basic definitions}
-  
-  A \emph{Kripke frame} or \emph{modal frame} is a pair $\langle W, R \rangle$ where $W$ is a (possibly empty) set, and $R$ is a \textbf{binary relation} on $W$. Elements of $W$ are called \emph{nodes} or \emph{worlds}, and $R$ is known as the \textbf{accessibility relation}.
 
   \begin{definition}
     \label{def:kripke-frame}
     %
     \lean{KripkeFrame}
+    \leanok
+  \end{definition}
+  
+  A \emph{Kripke frame} or \emph{modal frame} is a pair $\langle W, R \rangle$ where $W$ is a (possibly empty) set, and $R$ is a \textbf{binary relation} on $W$. Elements of $W$ are called \emph{nodes} or \emph{worlds}, and $R$ is known as the \textbf{accessibility relation}.
+
+  \begin{definition}
+    \label{def:kripke-model}
+    %
+    \lean{KripkeModel}
     \leanok
     %
     A \emph{Kripke model} is a triple $\langle W, R, \Vdash \rangle$, where $\langle W, R \rangle$ is a Kripke frame, and $\Vdash$ is a relation between nodes of $W$ and modal formulas,
