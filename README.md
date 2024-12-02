@@ -11,11 +11,4 @@ The scope of the project is the formalisation of Kripke frames, the modal operat
 
 - [Kripke Semantics (wikipedia entry)](https://en.wikipedia.org/wiki/Kripke_semantics) 
 
-- @book{Huth_Ryan_2004,  
-  place={Cambridge},  
-  edition={2},  
-  title={Logic in Computer Science: Modelling and Reasoning about Systems},  
-  publisher={Cambridge University Press},  
-  author={Huth, Michael and Ryan, Mark},  
-  year={2004}  
-}
+- Huth, M. and Ryan, M. (2004) Logic in Computer Science: Modelling and Reasoning about Systems. 2nd edn. Cambridge: Cambridge University Press. 
