@@ -9,10 +9,36 @@
 % (this is what the [theorem] arguments mean) and never resets it.
 % If you want for instance to number them within chapters then you can add
 % [chapter] at the end of the next line.
-\newtheorem{theorem}{Theorem}
+\newtheorem{theorem}{Theorem}[section]
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
 
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
+
+\newcommand{\Part}[1]{\widetilde{#1}}
+
+\newcommand{\parto}{\rightharpoonup} % partial application
+
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\set}[1]{\{#1\}}
+\newcommand{\such}{\mid}
+\newcommand{\lthen}{\Rightarrow}
+\newcommand{\all}[1]{\forall #1.\,}
+\newcommand{\some}[1]{\exists #1.\,}
+
+\newcommand{\comb}[1]{\mathsf{#1}} % combinator
+\newcommand{\combK}{\comb{K}} % combinator K
+\newcommand{\combS}{\comb{S}} % combinator S
+
+\newcommand{\numeral}[1]{\overline{#1}}
+
+\newcommand{\Expr}[2]{\mathsf{Expr}\,#1\,#2} % expressions in a context
+
+\newcommand{\override}[3]{#1[#2 \mapsto #3]} % the extension of an environment
+
+\newcommand{\eval}[2]{[\![ #1 ]\!] \, #2} % evaluation of an expression in a context
+\newcommand{\defined}[1]{#1\,{\Downarrow}}
+
+\newcommand{\abstr}[1]{\langle #1 \rangle\,} % abstraction

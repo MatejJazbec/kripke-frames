@@ -1,7 +1,7 @@
-PWD C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\src
+PWD c:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\src
 INPUT C:\Users\Matej Jazbec\AppData\Local\MiKTeX\miktex\data\le\xetex\xelatex.fmt
-INPUT print.tex
-OUTPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.log
+INPUT c:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\src\print.tex
+OUTPUT print.log
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
@@ -110,10 +110,10 @@ INPUT .\macros\print.tex
 INPUT .\macros\print.tex
 INPUT .\macros\print.tex
 INPUT macros\print.tex
-INPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.aux
-INPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.aux
-INPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.aux
-OUTPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.aux
+INPUT .\print.aux
+INPUT .\print.aux
+INPUT print.aux
+OUTPUT print.aux
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
@@ -134,13 +134,13 @@ INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\tex\latex\graphics\mathcolor.ltx
-INPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.out
-INPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.out
-INPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.out
-INPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.out
-INPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.out
-INPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.out
-OUTPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.out
+INPUT .\print.out
+INPUT .\print.out
+INPUT print.out
+INPUT print.out
+INPUT .\print.out
+INPUT .\print.out
+OUTPUT print.out
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
@@ -184,6 +184,6 @@ INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfo
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\Matej Jazbec\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.aux
-INPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.out
-INPUT C:\Users\Matej Jazbec\Documents\kripke-frames\blueprint\print\print.out
+INPUT print.aux
+INPUT .\print.out
+INPUT .\print.out

@@ -1,0 +1,2371 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.11.22)  1 DEC 2024 20:54
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex"
+(c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex
+LaTeX2e <2024-11-01>
+L3 programming layer <2024-11-02>
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:17: LaTeX Error: Environment abstract undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \begin{abstract}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:18: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18     W
+          e outline a plan of formalization for Kripke frames, define the mo...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no W in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 18.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 18.
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:18: Undefined control sequence.
+<recently read> \square 
+                        
+l.18 ...rames, define the modal operators $\square
+                                                  $, $\diamond$ and characte...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:19: LaTeX Error: \begin{document} ended by \end{abstract}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19   \end{abstract}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 18--20
+[]
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--20
+\OMS/cmsy/m/n/10 ^^E$
+ []
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:22: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22   T
+        his blueprint, and more generally the \href{https://github.com/Matej...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:22: Undefined control sequence.
+l.22 ...is blueprint, and more generally the \href
+                                                  {https://github.com/MatejJ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no J in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:22: Undefined control sequence.
+l.22 ...art of the assignment for the course \href
+                                                  {https://www.andrej.com/za...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 22--23
+[]
+ []
+
+
+Overfull \hbox (68.25pt too wide) in paragraph at lines 22--23
+\TU/lmtt/m/n/10 kripke-frames
+ []
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:25: Undefined control sequence.
+l.25   \section
+               {Basic definitions}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:25: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25   \section{B
+                 asic definitions}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no B in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 25--26
+[]
+ []
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:27: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27   A
+         \emph{Kripke frame} or \emph{modal frame} is a pair $\langle W, R \...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 27--28
+[]
+ []
+
+
+Overfull \hbox (28.78pt too wide) in paragraph at lines 27--28
+\TU/lmr/m/it/10 Kripke
+ []
+
+
+Overfull \hbox (24.67pt too wide) in paragraph at lines 27--28
+\TU/lmr/m/it/10 frame
+ []
+
+
+Overfull \hbox (25.56pt too wide) in paragraph at lines 27--28
+\TU/lmr/m/it/10 modal
+ []
+
+
+Overfull \hbox (24.67pt too wide) in paragraph at lines 27--28
+\TU/lmr/m/it/10 frame
+ []
+
+
+Overfull \hbox (29.05904pt too wide) in paragraph at lines 27--28
+\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 W; R\OMS/cmsy/m/n/10 i$
+ []
+
+
+Overfull \hbox (10.83334pt too wide) in paragraph at lines 27--28
+\OML/cmm/m/it/10 W$
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 27--28
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (13.41pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 bi-
+ []
+
+
+Overfull \hbox (22.79001pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 nary
+ []
+
+
+Overfull \hbox (13.84pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 re-
+ []
+
+
+Overfull \hbox (12.61pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 la-
+ []
+
+
+Overfull \hbox (19.8pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 tion
+ []
+
+
+Overfull \hbox (10.83334pt too wide) in paragraph at lines 27--28
+\OML/cmm/m/it/10 W$
+ []
+
+
+Overfull \hbox (10.83334pt too wide) in paragraph at lines 27--28
+\OML/cmm/m/it/10 W$
+ []
+
+
+Overfull \hbox (24.02pt too wide) in paragraph at lines 27--28
+\TU/lmr/m/it/10 nodes
+ []
+
+
+Overfull \hbox (27.73pt too wide) in paragraph at lines 27--28
+\TU/lmr/m/it/10 worlds
+ []
+
+
+Overfull \hbox (7.67015pt too wide) in paragraph at lines 27--28
+\OML/cmm/m/it/10 R$
+ []
+
+
+Overfull \hbox (14.53pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 ac-
+ []
+
+
+Overfull \hbox (18.75pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 ces-
+ []
+
+
+Overfull \hbox (11.56pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 si-
+ []
+
+
+Overfull \hbox (16.6pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 bil-
+ []
+
+
+Overfull \hbox (13.41pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 ity
+ []
+
+
+Overfull \hbox (13.84pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 re-
+ []
+
+
+Overfull \hbox (12.61pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 la-
+ []
+
+
+Overfull \hbox (19.8pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 tion 
+ []
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:29: LaTeX Error: Environment definition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29   \begin{definition}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:32: Undefined control sequence.
+l.32     \lean
+              {KripkeFrame}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:32: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32     \lean{K
+                ripkeFrame}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no K in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no F in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:33: Undefined control sequence.
+l.33     \leanok
+                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:35: Undefined control sequence.
+l.35 ...e model} is a triple $\langle W, R, \Vdash
+                                                   \rangle$, where $\langle ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:35: Undefined control sequence.
+<recently read> \Vdash 
+                       
+l.35 ... R \rangle$ is a Kripke frame, and $\Vdash
+                                                  $ is a relation between no...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 32--37
+[]
+ []
+
+
+Overfull \hbox (28.78pt too wide) in paragraph at lines 32--37
+\TU/lmr/m/it/10 Kripke
+ []
+
+
+Overfull \hbox (25.05pt too wide) in paragraph at lines 32--37
+\TU/lmr/m/it/10 model
+ []
+
+
+Overfull \hbox (33.50345pt too wide) in paragraph at lines 32--37
+\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 W; R; \OMS/cmsy/m/n/10 i$
+ []
+
+
+Overfull \hbox (29.05904pt too wide) in paragraph at lines 32--37
+\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 W; R\OMS/cmsy/m/n/10 i$
+ []
+
+
+Overfull \hbox (10.83334pt too wide) in paragraph at lines 32--37
+\OML/cmm/m/it/10 W$
+ []
+
+
+Overfull \hbox (16.87265pt too wide) in paragraph at lines 32--37
+\OML/cmm/m/it/10 w \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (10.83334pt too wide) in paragraph at lines 32--37
+\OML/cmm/m/it/10 W$
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 32--37
+\OML/cmm/m/it/10 A$
+ []
+
+
+Overfull \hbox (8.0868pt too wide) in paragraph at lines 32--37
+\OML/cmm/m/it/10 B$ 
+ []
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:38: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38     \begin{itemize}
+                        
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 38--38
+[] 
+ []
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:39: Undefined control sequence.
+l.39         \item $w \Vdash
+                             \neg A$ if and only if $w \nVdash A$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:39: Undefined control sequence.
+l.39 ...w \Vdash \neg A$ if and only if $w \nVdash
+                                                   A$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+
+Overfull \hbox (21.59496pt too wide) in paragraph at lines 39--40
+\OML/cmm/m/it/10 w\OMS/cmsy/m/n/10 :\OML/cmm/m/it/10 A$
+ []
+
+
+Overfull \hbox (14.92827pt too wide) in paragraph at lines 39--40
+\OML/cmm/m/it/10 wA$ 
+ []
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:40: Undefined control sequence.
+l.40         \item $w \Vdash
+                             A \to B$ if and only if $w \nVdash A$ or $w \Vd...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:40: Undefined control sequence.
+l.40 ... \Vdash A \to B$ if and only if $w \nVdash
+                                                   A$ or $w \Vdash B$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:40: Undefined control sequence.
+l.40 ... if and only if $w \nVdash A$ or $w \Vdash
+                                                   B$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+
+Overfull \hbox (27.706pt too wide) in paragraph at lines 40--41
+\OML/cmm/m/it/10 wA \OMS/cmsy/m/n/10 !
+ []
+
+
+Overfull \hbox (8.0868pt too wide) in paragraph at lines 40--41
+\OML/cmm/m/it/10 B$
+ []
+
+
+Overfull \hbox (14.92827pt too wide) in paragraph at lines 40--41
+\OML/cmm/m/it/10 wA$
+ []
+
+
+Overfull \hbox (15.51506pt too wide) in paragraph at lines 40--41
+\OML/cmm/m/it/10 wB$ 
+ []
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:41: Undefined control sequence.
+l.41         \item $w \Vdash
+                             \Box A$ if and only if $u \Vdash A$ for all $u$...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:41: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41         \item $w \Vdash \Box
+                                  A$ if and only if $u \Vdash A$ for all $u$...
+Load the latexsym or the amsfonts package to define this symbol
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:41: Undefined control sequence.
+l.41 ...$w \Vdash \Box A$ if and only if $u \Vdash
+                                                   A$ for all $u$ such that ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (14.92827pt too wide) in paragraph at lines 41--42
+\OML/cmm/m/it/10 wA$
+ []
+
+
+Overfull \hbox (13.2246pt too wide) in paragraph at lines 41--42
+\OML/cmm/m/it/10 uA$
+ []
+
+
+Overfull \hbox (5.72458pt too wide) in paragraph at lines 41--42
+\OML/cmm/m/it/10 u$
+ []
+
+
+Overfull \hbox (26.3784pt too wide) in paragraph at lines 41--42
+\OML/cmm/m/it/10 w R u$ 
+ []
+
+Missing character: There is no . in font nullfont!
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:43: LaTeX Error: \begin{document} ended by \end{definition}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43  \end{definition}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:45: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45  W
+       e read $w \Vdash A$ as “$w$ satisfies $A$”, “$A$ is satisfied in $w$”...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no W in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:45: Undefined control sequence.
+l.45  We read $w \Vdash
+                        A$ as “$w$ satisfies $A$”, “$A$ is satisfied in $w$”...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no “ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ” in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no “ in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no ” in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no “ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no ” in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:45: Undefined control sequence.
+<recently read> \Vdash 
+                       
+l.45 ... or “$w$ forces $A$”. The relation $\Vdash
+                                                  $ is called the \emph{sati...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 45--47
+[]
+ []
+
+
+Overfull \hbox (14.92827pt too wide) in paragraph at lines 45--47
+\OML/cmm/m/it/10 wA$
+ []
+
+
+Overfull \hbox (7.42825pt too wide) in paragraph at lines 45--47
+\OML/cmm/m/it/10 w$
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 45--47
+\OML/cmm/m/it/10 A$
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 45--47
+\OML/cmm/m/it/10 A$
+ []
+
+
+Overfull \hbox (7.42825pt too wide) in paragraph at lines 45--47
+\OML/cmm/m/it/10 w$
+ []
+
+
+Overfull \hbox (7.42825pt too wide) in paragraph at lines 45--47
+\OML/cmm/m/it/10 w$
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 45--47
+\OML/cmm/m/it/10 A$
+ []
+
+
+Overfull \hbox (16.1pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 sat-
+ []
+
+
+Overfull \hbox (10.74pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 is-
+ []
+
+
+Overfull \hbox (16.36pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 fac-
+ []
+
+
+Overfull \hbox (17.12pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (11.89pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 re-
+ []
+
+
+Overfull \hbox (11.25pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 la-
+ []
+
+
+Overfull \hbox (17.12pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (20.45pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 eval-
+ []
+
+
+Overfull \hbox (8.95pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 u-
+ []
+
+
+Overfull \hbox (8.69pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 a-
+ []
+
+
+Overfull \hbox (17.12pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 tion
+ []
+
+
+Overfull \hbox (20.07pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 forc-
+ []
+
+
+Overfull \hbox (13.29pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 ing
+ []
+
+
+Overfull \hbox (11.89pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 re-
+ []
+
+
+Overfull \hbox (11.25pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 la-
+ []
+
+
+Overfull \hbox (17.12pt too wide) in paragraph at lines 45--47
+\TU/lmr/m/it/10 tion
+ []
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:48: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 A
+       formula $A$ is \emph{valid} in:
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no A in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 48--49
+[]
+ []
+
+
+Overfull \hbox (7.50002pt too wide) in paragraph at lines 48--49
+\OML/cmm/m/it/10 A$
+ []
+
+
+Overfull \hbox (20.94pt too wide) in paragraph at lines 48--49
+\TU/lmr/m/it/10 valid 
+ []
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:50: Undefined control sequence.
+l.50     \item a model $\langle W, R, \Vdash
+                                             \rangle$, if $w \Vdash A$ for a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:50: Undefined control sequence.
+l.50 ...langle W, R, \Vdash \rangle$, if $w \Vdash
+                                                   A$ for all $w \in W$,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no , in font nullfont!
+
+Overfull \hbox (33.50345pt too wide) in paragraph at lines 50--51
+\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 W; R; \OMS/cmsy/m/n/10 i$
+ []
+
+
+Overfull \hbox (14.92827pt too wide) in paragraph at lines 50--51
+\OML/cmm/m/it/10 wA$
+ []
+
+
+Overfull \hbox (16.87265pt too wide) in paragraph at lines 50--51
+\OML/cmm/m/it/10 w \OMS/cmsy/m/n/10 2
+ []
+
+
+Overfull \hbox (10.83334pt too wide) in paragraph at lines 50--51
+\OML/cmm/m/it/10 W$ 
+ []
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:51: Undefined control sequence.
+l.51 ...$, if it is valid in $\langle W, R, \Vdash
+                                                   \rangle$ for all possible...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:51: Undefined control sequence.
+<recently read> \Vdash 
+                       
+l.51 ...angle$ for all possible choices of $\Vdash
+                                                  $,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+
+Overfull \hbox (29.05904pt too wide) in paragraph at lines 51--52
+\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 W; R\OMS/cmsy/m/n/10 i$
+ []
+
+
+Overfull \hbox (33.50345pt too wide) in paragraph at lines 51--52
+\OMS/cmsy/m/n/10 h\OML/cmm/m/it/10 W; R; \OMS/cmsy/m/n/10 i$
+ []
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 52--53
+\OML/cmm/m/it/10 C$
+ []
+
+
+Overfull \hbox (7.86249pt too wide) in paragraph at lines 52--53
+\OML/cmm/m/it/10 C$ 
+ []
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:62: Undefined control sequence.
+l.62 \section
+             *{Common Modal Axiom Schemata}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no * in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 62--63
+[]
+ []
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 64--65
+[]
+ []
+
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (29.01pt too wide) in paragraph at lines 67--68
+[]\TU/lmr/bx/n/10 K 
+ []
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:69: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 \Box
+          (A \to B) \to (\Box A \to \Box B) \quad \text{(Holds true for any ...
+Load the latexsym or the amsfonts package to define this symbol
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:69: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 \Box (A \to B) \to (\Box
+                              A \to \Box B) \quad \text{(Holds true for any ...
+Load the latexsym or the amsfonts package to define this symbol
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:69: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 \Box (A \to B) \to (\Box A \to \Box
+                                         B) \quad \text{(Holds true for any ...
+Load the latexsym or the amsfonts package to define this symbol
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:69: Undefined control sequence.
+l.69 ...\to B) \to (\Box A \to \Box B) \quad \text
+                                                  {(Holds true for any frames)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (213.32993pt too wide) detected at line 70
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 B\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ! \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 B\OT1/cmr/m/n/10 ) []
+ []
+
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (28.0pt too wide) in paragraph at lines 72--73
+[]\TU/lmr/bx/n/10 T 
+ []
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:74: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 \Box
+          A \to A \quad \text{(Reflexive: } w\,R\,w\text{)}
+Load the latexsym or the amsfonts package to define this symbol
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:74: Undefined control sequence.
+l.74 \Box A \to A \quad \text
+                             {(Reflexive: } w\,R\,w\text{)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:74: Undefined control sequence.
+l.74 ...o A \quad \text{(Reflexive: } w\,R\,w\text
+                                                  {)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (114.90686pt too wide) detected at line 75
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 A []w R w[]
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 77--77
+[][] 
+ []
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:78: Undefined control sequence.
+l.78 \text
+          {Dense:} \quad \Box\Box A \to \Box A \quad \text{(If } w\,R\,u, \t...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:78: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \text{Dense:} \quad \Box
+                             \Box A \to \Box A \quad \text{(If } w\,R\,u, \t...
+Load the latexsym or the amsfonts package to define this symbol
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:78: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \text{Dense:} \quad \Box\Box
+                                  A \to \Box A \quad \text{(If } w\,R\,u, \t...
+Load the latexsym or the amsfonts package to define this symbol
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:78: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \text{Dense:} \quad \Box\Box A \to \Box
+                                             A \quad \text{(If } w\,R\,u, \t...
+Load the latexsym or the amsfonts package to define this symbol
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:78: Undefined control sequence.
+l.78 ...:} \quad \Box\Box A \to \Box A \quad \text
+                                                  {(If } w\,R\,u, \text{ the...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:78: Undefined control sequence.
+l.78 ...to \Box A \quad \text{(If } w\,R\,u, \text
+                                                  { then } \exists v\,(w\,R\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:78: Undefined control sequence.
+l.78 ... } \exists v\,(w\,R\,v \land v\,R\,u)\text
+                                                  {)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (204.6772pt too wide) detected at line 79
+[] \OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 A []w R u; []\OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 v \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 w R v \OMS/cmsy/m/n/10 ^ \OML/cmm/m/it/10 v R u\OT1/cmr/m/n/10 )[]
+ []
+
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (25.75pt too wide) in paragraph at lines 81--82
+[]\TU/lmr/bx/n/10 4 
+ []
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:83: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \Box
+          A \to \Box\Box A \quad \text{(Transitive: If } w\,R\,v \text{ and ...
+Load the latexsym or the amsfonts package to define this symbol
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:83: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \Box A \to \Box
+                    \Box A \quad \text{(Transitive: If } w\,R\,v \text{ and ...
+Load the latexsym or the amsfonts package to define this symbol
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:83: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 \Box A \to \Box\Box
+                         A \quad \text{(Transitive: If } w\,R\,v \text{ and ...
+Load the latexsym or the amsfonts package to define this symbol
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:83: Undefined control sequence.
+l.83 \Box A \to \Box\Box A \quad \text
+                                      {(Transitive: If } w\,R\,v \text{ and ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:83: Undefined control sequence.
+l.83 ...quad \text{(Transitive: If } w\,R\,v \text
+                                                  { and } v\,R\,u, \text{ th...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:83: Undefined control sequence.
+l.83 ...: If } w\,R\,v \text{ and } v\,R\,u, \text
+                                                  { then } w\,R\,u\text{)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:83: Undefined control sequence.
+l.83 ... and } v\,R\,u, \text{ then } w\,R\,u\text
+                                                  {)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (216.8774pt too wide) detected at line 84
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 A []w R v[]v R u; []w R u[]
+ []
+
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (28.82pt too wide) in paragraph at lines 86--87
+[]\TU/lmr/bx/n/10 D 
+ []
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:88: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \Box
+          A \to \Diamond A \quad \text{or} \quad \Diamond\top \quad \text{or...
+Load the latexsym or the amsfonts package to define this symbol
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:88: LaTeX Error: Command \Diamond not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \Box A \to \Diamond
+                         A \quad \text{or} \quad \Diamond\top \quad \text{or...
+Load the latexsym or the amsfonts package to define this symbol
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:88: Undefined control sequence.
+l.88 \Box A \to \Diamond A \quad \text
+                                      {or} \quad \Diamond\top \quad \text{or...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:88: LaTeX Error: Command \Diamond not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ... \Diamond A \quad \text{or} \quad \Diamond
+                                                  \top \quad \text{or} \quad...
+Load the latexsym or the amsfonts package to define this symbol
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:88: Undefined control sequence.
+l.88 ...d \text{or} \quad \Diamond\top \quad \text
+                                                  {or} \quad \neg\Box\bot
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:88: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ...Diamond\top \quad \text{or} \quad \neg\Box
+                                                  \bot
+Load the latexsym or the amsfonts package to define this symbol
+
+
+Overfull \hbox (72.05095pt too wide) detected at line 89
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 A [] \OMS/cmsy/m/n/10 > [] :?
+ []
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:91: Undefined control sequence.
+l.91 \text
+          {Serial:} \quad \forall w\,\exists v\,(w\,R\,v)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (92.11516pt too wide) detected at line 92
+[] \OMS/cmsy/m/n/10 8\OML/cmm/m/it/10 w \OMS/cmsy/m/n/10 9\OML/cmm/m/it/10 v \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 w R v\OT1/cmr/m/n/10 )
+ []
+
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (28.18001pt too wide) in paragraph at lines 94--95
+[]\TU/lmr/bx/n/10 B 
+ []
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:96: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 A \to \Box
+               \Diamond A \quad \text{or} \quad \Diamond\Box A \to A \quad \...
+Load the latexsym or the amsfonts package to define this symbol
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:96: LaTeX Error: Command \Diamond not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 A \to \Box\Diamond
+                        A \quad \text{or} \quad \Diamond\Box A \to A \quad \...
+Load the latexsym or the amsfonts package to define this symbol
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:96: Undefined control sequence.
+l.96 A \to \Box\Diamond A \quad \text
+                                     {or} \quad \Diamond\Box A \to A \quad \...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:96: LaTeX Error: Command \Diamond not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ...x\Diamond A \quad \text{or} \quad \Diamond
+                                                  \Box A \to A \quad \text{(...
+Load the latexsym or the amsfonts package to define this symbol
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:96: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 ...amond A \quad \text{or} \quad \Diamond\Box
+                                                   A \to A \quad \text{(Symm...
+Load the latexsym or the amsfonts package to define this symbol
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:96: Undefined control sequence.
+l.96 ...or} \quad \Diamond\Box A \to A \quad \text
+                                                  {(Symmetric: } w\,R\,v \Ri...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:96: Undefined control sequence.
+l.96 ...metric: } w\,R\,v \Rightarrow v\,R\,w\text
+                                                  {)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (197.27121pt too wide) detected at line 97
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 A [] A \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 A []w R v \OMS/cmsy/m/n/10 ) \OML/cmm/m/it/10 v R w[]
+ []
+
+Missing character: There is no : in font nullfont!
+
+Overfull \hbox (25.75pt too wide) in paragraph at lines 99--100
+[]\TU/lmr/bx/n/10 5 
+ []
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:101: LaTeX Error: Command \Diamond not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \Diamond
+               A \to \Box\Diamond A \quad \text{(Euclidean: If } w\,R\,u \te...
+Load the latexsym or the amsfonts package to define this symbol
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:101: LaTeX Error: Command \Box not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \Diamond A \to \Box
+                         \Diamond A \quad \text{(Euclidean: If } w\,R\,u \te...
+Load the latexsym or the amsfonts package to define this symbol
+
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:101: LaTeX Error: Command \Diamond not provided in base LaTeX2e.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \Diamond A \to \Box\Diamond
+                                  A \quad \text{(Euclidean: If } w\,R\,u \te...
+Load the latexsym or the amsfonts package to define this symbol
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:101: Undefined control sequence.
+l.101 \Diamond A \to \Box\Diamond A \quad \text
+                                               {(Euclidean: If } w\,R\,u \te...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:101: Undefined control sequence.
+l.101 ...quad \text{(Euclidean: If } w\,R\,u \text
+                                                  { and } w\,R\,v, \text{ th...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:101: Undefined control sequence.
+l.101 ... If } w\,R\,u \text{ and } w\,R\,v, \text
+                                                  { then } u\,R\,v\text{)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/src/content.tex:101: Undefined control sequence.
+l.101 ...and } w\,R\,v, \text{ then } u\,R\,v\text
+                                                  {)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (214.30151pt too wide) detected at line 102
+\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ! \OML/cmm/m/it/10 A []w R u[]w R v; []u R v[]
+ []
+
+)
+! Emergency stop.
+<*> ...ts/kripke-frames/blueprint/src/content.tex"
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 40 strings out of 408788
+ 937 string characters out of 5747234
+ 389118 words of memory out of 5000000
+ 23034 multiletter control sequences out of 15000+600000
+ 558093 words of font info for 39 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 19i,1n,22p,396b,87s stack positions out of 10000i,1000n,20000p,200000b,200000s
+No pages of output.

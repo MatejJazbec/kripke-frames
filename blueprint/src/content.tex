@@ -6,5 +6,96 @@
 % the current file can be a simple sequence of \input. Otherwise It
 % can start with a \section or \chapter for instance.
 
-Test commit
+% In this file you should put the actual content of the blueprint.
+% It will be used both by the web and the print version.
+% It should *not* include the \begin{document}
+%
+% If you want to split the blueprint content into several files then
+% the current file can be a simple sequence of \input. Otherwise It
+% can start with a \section or \chapter for instance.
+
+\begin{abstract}
+    We outline a plan of formalization for Kripke frames, define the modal operators $\square$, $\diamond$ and characterise some of the most relevant modal logic axioms. Time permitting, we will formalize some examples.
+  \end{abstract}
+  
+  
+  This blueprint, and more generally the \href{https://github.com/MatejJazbec/kripke-frames}{\texttt{kripke-frames}} Lean project, is part of the assignment for the course \href{https://www.andrej.com/zapiski/MAT-FORMATH-2024/book/}{Formalized mathematics and proof assistants}.
+
+  
+  \section{Basic definitions}
+  
+  A \emph{Kripke frame} or \emph{modal frame} is a pair $\langle W, R \rangle$ where $W$ is a (possibly empty) set, and $R$ is a \textbf{binary relation} on $W$. Elements of $W$ are called \emph{nodes} or \emph{worlds}, and $R$ is known as the \textbf{accessibility relation}.
+
+  \begin{definition}
+    \label{def:kripke-frame}
+    %
+    \lean{KripkeFrame}
+    \leanok
+    %
+    A \emph{Kripke model} is a triple $\langle W, R, \Vdash \rangle$, where $\langle W, R \rangle$ is a Kripke frame, and $\Vdash$ is a relation between nodes of $W$ and modal formulas,
+     such that for all $w \in W$ and modal formulas $A$ and $B$:
+
+    \begin{itemize}
+        \item $w \Vdash \neg A$ if and only if $w \nVdash A$,
+        \item $w \Vdash A \to B$ if and only if $w \nVdash A$ or $w \Vdash B$,
+        \item $w \Vdash \Box A$ if and only if $u \Vdash A$ for all $u$ such that $w \; R \; u$.
+    \end{itemize}.
+ \end{definition}
+
+ We read $w \Vdash A$ as “$w$ satisfies $A$”, “$A$ is satisfied in $w$”, or “$w$ forces $A$”. The relation $\Vdash$ is called the \emph{satisfaction relation},
+  \emph{evaluation}, or \emph{forcing relation}. The satisfaction relation is uniquely determined by its value on propositional variables.
+
+A formula $A$ is \emph{valid} in:
+\begin{itemize}
+    \item a model $\langle W, R, \Vdash \rangle$, if $w \Vdash A$ for all $w \in W$,
+    \item a frame $\langle W, R \rangle$, if it is valid in $\langle W, R, \Vdash \rangle$ for all possible choices of $\Vdash$,
+    \item a class $C$ of frames or models, if it is valid in every member of $C$.
+\end{itemize}
+
+
+
+Consider the schema \( T : \Box A \to A \). \( T \) is valid in any reflexive frame \( \langle W, R \rangle \): if \( w \Vdash \Box A \), then \( w \Vdash A \) since \( w \, R \, w \).
+ On the other hand, a frame which validates \( T \) has to be reflexive: fix \( w \in W \), and define satisfaction of a propositional variable \( p \) as follows: \( u \Vdash p \)
+  if and only if \( w \, R \, u \). Then \( w \Vdash \Box p \), thus \( w \Vdash p \) by \( T \), which means \( w \, R \, w \) using the definition of \( \Vdash \). \( T \) corresponds
+   to the class of reflexive Kripke frames.
+
+
+
+
+
+\section*{Common Modal Axiom Schemata}
+
+The following table lists common modal axioms together with their corresponding classes.
+\[
+\begin{array}{|c|c|c|}
+\hline
+\textbf{Name} & \textbf{Axiom} & \textbf{Frame Condition} \\
+\hline
+\textbf{K} & \Box (A \to B) \to (\Box A \to \Box B) & \text{Holds true for any frames} \\
+\hline
+\textbf{T} & \Box A \to A & \text{Reflexive: } w\,R\,w \\
+\hline
+- & \Box\Box A \to \Box A & \text{Dense: } w\,R\,u \Rightarrow \exists v\,(w\,R\,v \land v\,R\,u) \\
+\hline
+\textbf{4} & \Box A \to \Box\Box A & \text{Transitive: } w\,R\,v \wedge v\,R\,u \Rightarrow w\,R\,u \\
+\hline
+\textbf{D} & \Box A \to \Diamond A \text{ or } \Diamond\top \text{ or } \neg\Box\bot & \text{Serial: } \forall w\,\exists v\,(w\,R\,v) \\
+\hline
+\textbf{B} & A \to \Box\Diamond A \text{ or } \Diamond\Box A \to A & \text{Symmetric: } w\,R\,v \Rightarrow v\,R\,w \\
+\hline
+\textbf{5} & \Diamond A \to \Box\Diamond A & \text{Euclidean: } w\,R\,u \land w\,R\,v \Rightarrow u\,R\,v \\
+\hline
+\end{array}
+\]
+
+\section*{Examples}
+Time permitting, we will formalize some examples. This section will thus be extended in due time.
+
+
+ 
+  
+  %%% Local Variables:
+  %%% mode: LaTeX
+  %%% TeX-master: "print"
+  %%% End:
 
