@@ -12,7 +12,7 @@
 <meta name="generator" content="plasTeX" />
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Kripke frames</title>
+<title>Kripke Frames</title>
 <link rel="stylesheet" href="styles/theme-white.css" />
 <link rel="stylesheet" href="styles/amsthm.css" />
 <link rel="stylesheet" href="styles/extra_styles.css" />
@@ -28,20 +28,20 @@
 
 <div class="main-text">
 <div class="titlepage">
-<h1>Kripke frames</h1>
+<h1>Kripke Frames</h1>
 <p class="authors">
 <span class="author">Matej Jazbec</span>
 </p>
 </div>
 <div class="abstract"> We outline a plan of formalization for Kripke frames, define the modal operators \(\square \), \(\diamond \) and characterise some of the most relevant modal logic axioms. Time permitting, we will formalize some examples. </div>
 <p>This blueprint, and more generally the <a href ="https://github.com/MatejJazbec/kripke-frames"><span class="ttfamily">kripke-frames</span></a> Lean project, is part of the assignment for the course <a href ="https://www.andrej.com/zapiski/MAT-FORMATH-2024/book/">Formalized mathematics and proof assistants</a>. </p>
-<h1 id="a0000000002"> Basic definitions</h1>
+<h1 id="a0000000002">1 Basic definitions</h1>
 <div class="definition_thmwrapper theorem-style-definition" id="def:kripke-frame">
   <div class="definition_thmheading">
     <span class="definition_thmcaption">
     Definition
     </span>
-    <span class="definition_thmlabel">.1</span>
+    <span class="definition_thmlabel">1.1</span>
   </div>
   <div class="definition_thmcontent">
   <p> A <em>Kripke frame</em> or <em>modal frame</em> is a pair \(\langle W, R \rangle \) where \(W\) is a (possibly empty) set, and \(R\) is a <b class="bfseries">binary relation</b> on \(W\). Elements of \(W\) are called <em>nodes</em> or <em>worlds</em>, and \(R\) is known as the <b class="bfseries">accessibility relation</b>. </p>
@@ -53,7 +53,7 @@
     <span class="definition_thmcaption">
     Definition
     </span>
-    <span class="definition_thmlabel">.2</span>
+    <span class="definition_thmlabel">1.2</span>
   </div>
   <div class="definition_thmcontent">
   <p> A <em>Kripke model</em> is a triple \(\langle W, R, \Vdash \rangle \), where \(\langle W, R \rangle \) is a Kripke frame, and \(\Vdash \) is a relation between nodes of \(W\) and modal formulas, such that for all \(w \in W\) and modal formulas \(A\) and \(B\): </p>
