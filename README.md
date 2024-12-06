@@ -5,7 +5,7 @@
 
 This Lean project is part of the coursework for the [Formalized Mathematics and Proof Assistants](https://www.andrej.com/zapiski/MAT-FORMATH-2024/book/) course.
 
-The scope of the project is the formalisation of Kripke frames, the modal operators $\square$, $\diamond$ and characterise some of the most relevant modal logic axioms. A detailed project plan is exposed in the project [blueprint](https://github.com/MatejJazbec/kripke-frames/blob/main/blueprint/src/print.pdf).
+The scope of the project is the formalisation of Kripke frames, the modal operators $\square$, $\diamond$ and characterise some of the most relevant modal logic axioms. A detailed project plan is exposed in the project [blueprint](https://matejjazbec.github.io/kripke-frames).
 
 ## References
 
