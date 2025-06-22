@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1750628816.41911 "print.tex" "C:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/print/print.pdf" "print" 1750628822.94363 0
+["pdflatex"] 1750630344.68878 "print.tex" "C:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/print/print.pdf" "print" 1750630348.50779 0
   "C:/Users/Matej" 1731666341 18980 cb452902258a5c33120732ef49980fcc ""
   "C:/Users/Matej Jazbec/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1732254501 25351318 128b99c2fad4a1b287c30e61d2e7d013 ""
   "C:/Users/Matej Jazbec/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768654 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -81,9 +81,9 @@
   "C:/Users/Matej Jazbec/AppData/Local/Programs/MiKTeX/tex/latex/unicode-math/unicode-math-xetex.sty" 1691937353 131459 a23c98c9e5ecfc17568c7bc94fda1317 ""
   "C:/Users/Matej Jazbec/AppData/Local/Programs/MiKTeX/tex/latex/unicode-math/unicode-math.sty" 1691937353 1474 b42cfbe849cb22ed1c0632800327884f ""
   "C:/Users/Matej Jazbec/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "C:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/print/print.aux" 1750628822 2498 ec27ef7fafbcd5e28fd167f90444dfe4 "pdflatex"
-  "C:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/print/print.out" 1750628822 854 d6cb88b9f3a3872661a9633b61a1f63d "pdflatex"
-  "content.tex" 1750628579 16364 f4e708fa7ff71254d48920bd7e306c9c ""
+  "C:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/print/print.aux" 1750630348 2498 ec27ef7fafbcd5e28fd167f90444dfe4 "pdflatex"
+  "C:/Users/Matej Jazbec/Documents/kripke-frames/blueprint/print/print.out" 1750630348 854 d6cb88b9f3a3872661a9633b61a1f63d "pdflatex"
+  "content.tex" 1750629505 16341 acc32a10a70e7e5d35db5d93ece4bbc9 ""
   "macros/common.tex" 1733082792 1640 09e64a4d099cdcc91a4c2808aeda43f5 ""
   "macros/print.tex" 1732252550 1101 87627b2ec24fef68edc71c13f43f7bab ""
   "print.tex" 1750626700 1114 dd2f55b5f053a335a46a3f2467d47806 ""
