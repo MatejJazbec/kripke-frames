@@ -34,7 +34,7 @@
 </p>
 </div>
 <div class="abstract"> We outline a plan of formalization for Kripke frames, define the modal operators \(\square \), \(\diamond \) and characterise some of the most relevant modal logic axioms. Time permitting, we will formalize some examples. </div>
-<p>This blueprint, and more generally the <a href ="https://github.com/MatejJazbec/kripke-frames"><span class="ttfamily">kripke-frames</span></a> Lean project, is part of the assignment for the course <a href ="https://www.andrej.com/zapiski/MAT-FORMATH-2024/book/">Formalized mathematics and proof assistants</a>. </p>
+<p>This blueprint, and more generally the <a href ="https://github.com/MatejJazbec/kripke-frames"><span class="ttfamily">kripke-frames</span></a> Lean project, is part of the assignment for the course <a href ="https://www.andrej.com/zapiski/MAT-FORMATH-2024/book/">Formalized mathematics and proof assistants</a>. The project follows chapters \(1\) and \(2\) of the <a href ="https://bd.openlogicproject.org/">textbook Boxes and Diamonds</a>. </p>
 <h1 id="a0000000002">1 Basic definitions</h1>
 <div class="definition_thmwrapper theorem-style-definition" id="def:kripke-frame">
   <div class="definition_thmheading">
@@ -44,7 +44,7 @@
     <span class="definition_thmlabel">1.1</span>
   </div>
   <div class="definition_thmcontent">
-  <p> A <em>Kripke frame</em> or <em>modal frame</em> is a pair \(\langle W, R \rangle \) where \(W\) is a (possibly empty) set, and \(R\) is a <b class="bfseries">binary relation</b> on \(W\). Elements of \(W\) are called <em>nodes</em> or <em>worlds</em>, and \(R\) is known as the <b class="bfseries">accessibility relation</b>. </p>
+  <p> KripkeFrame A <em>Kripke frame</em> or <em>modal frame</em> is a pair \(F = \langle W, R \rangle \) where \(W\) is a nonempty set of worlds and \(R\) is a <b class="bfseries">binary relation</b> on \(W\). Elements of \(W\) are called <em>nodes</em> or <em>worlds</em>, and \(R\) is known as the <b class="bfseries">accessibility relation</b>. When \(Rww'\) holds, we say that \(w'\) is <em>accessible</em> from \(w\). </p>
 
   </div>
 </div>
@@ -56,36 +56,270 @@
     <span class="definition_thmlabel">1.2</span>
   </div>
   <div class="definition_thmcontent">
-  <p> A <em>Kripke model</em> is a triple \(\langle W, R, \Vdash \rangle \), where \(\langle W, R \rangle \) is a Kripke frame, and \(\Vdash \) is a relation between nodes of \(W\) and modal formulas, such that for all \(w \in W\) and modal formulas \(A\) and \(B\): </p>
-<ul class="itemize">
-  <li><p>\(w \Vdash \neg A\) if and only if \(w \nVdash A\), </p>
+  <p> KripkeModel A <em>Kripke model</em> for the basic modal language is a triple \(M = \langle W, R, V \rangle \), where: </p>
+<ol class="enumerate">
+  <li><p>\(W\) is a nonempty set of <em>worlds</em>, </p>
 </li>
-  <li><p>\(w \Vdash A \to B\) if and only if \(w \nVdash A\) or \(w \Vdash B\), </p>
+  <li><p>\(R\) is a binary <em>accessibility relation</em> on \(W\), and </p>
 </li>
-  <li><p>\(w \Vdash \Box A\) if and only if \(u \Vdash A\) for all \(u\) such that \(w \;  R \;  u\). </p>
+  <li><p>\(V\) is a function assigning to each propositional variable \(p\) a set \(V(p)\) of possible worlds. </p>
 </li>
-</ul>
-<p>. </p>
+</ol>
+<p> When \(w \in V(p)\), we say that \(p\) is <em>true</em> at \(w\). </p>
+<p>A <em>model</em> \(M\) is based on a frame \(F = \langle W, R \rangle \) iff \(M = \langle W, R, V \rangle \) for some valuation \(V\). </p>
 
   </div>
 </div>
-<p>We read \(w \Vdash A\) as “\(w\) satisfies \(A\)”, “\(A\) is satisfied in \(w\)”, or “\(w\) forces \(A\)”. The relation \(\Vdash \) is called the <em>satisfaction relation</em>, <em>evaluation</em>, or <em>forcing relation</em>. The satisfaction relation is uniquely determined by its value on propositional variables. </p>
-<p>A formula \(A\) is <em>valid</em> in: </p>
+<p>Every modal model determines which modal formulas count as true at which worlds in it. The relation “model \(M\) makes formula \(A\) true at world \(w\)” is the basic notion of relational semantics. The relation is defined inductively and coincides with the usual characterization using truth tables for the non-modal operators. </p>
+<div class="definition_thmwrapper theorem-style-definition" id="truth-of-formula">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">1.3</span>
+  </div>
+  <div class="definition_thmcontent">
+  <p> box, diamond Truth of a formula \(A\) at world \(w\) in a model \(M\), in symbols \(M, w \Vdash A\), is defined, for the modal operators \(\Box \) and \(\Diamond \), inductively as follows: </p>
+<ol class="enumerate">
+  <li><p>\(A \equiv \Box B\): \(M, w \Vdash \Box B\) iff for all \(w' \in W\) such that \(Rww'\), we have \(M, w' \Vdash B\). </p>
+</li>
+  <li><p>\(A \equiv \Diamond B\): \(M, w \Vdash \Diamond B\) iff there exists \(w' \in W\) such that \(Rww'\) and \(M, w' \Vdash B\). </p>
+</li>
+</ol>
+
+  </div>
+</div>
+<p>Note that by the first clause, a formula \(\Box B\) is true at \(w\) whenever there are no \(w'\) with \(Rww'\). In such a case, \(\Box B\) is vacuously true at \(w\). Also, \(\Box B\) may be satisfied at \(w\) even if \(B\) is not. The truth of \(B\) at \(w\) does not guarantee the truth of \(\Diamond B\) at \(w\). This holds, however, if \(Rww\) holds (e.g., if \(R\) is reflexive). If there is no \(w'\) such that \(Rww'\), then \(M, w \not\Vdash \Diamond A\), for any \(A\). </p>
+<h2 id="a0000000003">1.1 Truth in a model</h2>
+<p>We will be interested in which formulas are true at every world in a given model. Let’s introduce a notation for this. </p>
+<div class="definition_thmwrapper theorem-style-definition" id="true-in-model">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">1.4</span>
+  </div>
+  <div class="definition_thmcontent">
+  <p> true_at_model A formula \(A\) is <em>true in a model</em> \(M = \langle W, R, V \rangle \), written \(M \Vdash A\), iff \(M, w \Vdash A\) for every \(w \in W\). </p>
+
+  </div>
+</div>
+<h2 id="a0000000004">1.2 Validity</h2>
+<p>Formulas that are true in all models, i.e., true at every world in every model, are particularly interesting. They represent those modal propositions which are true regardless of how \(\Box \) and \(\Diamond \) are interpreted, as long as the interpretation is generated by some accessibility relation on possible worlds. We call such formulas <em>valid</em>. </p>
+<p>Part of the interest of relational models is that different interpretations of \(\Box \) and \(\Diamond \) can be captured by different kinds of accessibility relations. This suggests that we should define validity not just relative to all models, but relative to all models of a certain kind. </p>
+<p>It will turn out, e.g., that \(\Box p \to p\) is true in all models where every world is accessible from itself, i.e., \(R\) is reflexive. Defining validity relative to classes of models enables us to formulate this succinctly: \(\Box p \to p\) is valid in the class of reflexive models. </p>
+<div class="definition_thmwrapper theorem-style-definition" id="valid-in-class">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">1.5</span>
+  </div>
+  <div class="definition_thmcontent">
+  <p> A formula \(A\) is <em>valid in a class</em> \(\mathcal{C}\) of models if it is true in every model in \(\mathcal{C}\) (i.e., true at every world in every model in \(\mathcal{C}\)). If \(A\) is valid in \(\mathcal{C}\), we write \(\mathcal{C} \vDash A\), and we write \(\vDash A\) if \(A\) is valid in the class of all models. </p>
+
+  </div>
+</div>
+<div class="definition_thmwrapper theorem-style-definition" id="valid-schema">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">1.6</span>
+  </div>
+  <div class="definition_thmcontent">
+  <p> A <em>schema</em>, i.e., a set of formulas comprising all and only the substitution instances of some modal characteristic formula \(C\), is <em>true in a model</em> if and only if all of its instances are (where a formula \(A\) is an <em>instance</em> of a schema if it is a member of the set); and a schema is <em>valid</em> if and only if it is true in every model. </p>
+
+  </div>
+</div>
+<div class="proposition_thmwrapper theorem-style-plain" id="proof:duality-schema">
+  <div class="proposition_thmheading">
+    <span class="proposition_thmcaption">
+    Proposition
+    </span>
+    <span class="proposition_thmlabel">1.7</span>
+  </div>
+  <div class="proposition_thmcontent">
+  <p> dual_valid The following schema, called the <em>duality schema</em>, is valid: </p>
+<div class="displaymath" id="a0000000005">
+  \[  \Diamond A \leftrightarrow \neg \Box \neg A.  \]
+</div>
+
+  </div>
+</div>
+<div class="proof_wrapper" id="a0000000006">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">â–¼</span>
+  </div>
+  <div class="proof_content">
+  <p> By straightforward unfolding of definitions and classical equivalences between \(\diamond \) and \(\Box \). </p>
+
+  </div>
+</div>
+<div class="proposition_thmwrapper theorem-style-plain" id="modus-ponens-validity">
+  <div class="proposition_thmheading">
+    <span class="proposition_thmcaption">
+    Proposition
+    </span>
+    <span class="proposition_thmlabel">1.8</span>
+  </div>
+  <div class="proposition_thmcontent">
+  <p> If \(A\) and \(A \rightarrow B\) are true at a world in a model, then so is \(B\). Hence, the valid formulas are closed under modus ponens. </p>
+
+  </div>
+</div>
+<div class="proposition_thmwrapper theorem-style-plain" id="substitution-validity">
+  <div class="proposition_thmheading">
+    <span class="proposition_thmcaption">
+    Proposition
+    </span>
+    <span class="proposition_thmlabel">1.9</span>
+  </div>
+  <div class="proposition_thmcontent">
+  <p> A formula \(A\) is valid iff all its substitution instances are. In other words, a schema is valid iff its characteristic formula is. </p>
+
+  </div>
+</div>
+<h2 id="a0000000007">1.3 Entailment</h2>
+<p> With the definition of truth at a world, we can define an entailment relation between formulas. A formula \(B\) <em>entails</em> \(A\) if and only if, whenever \(B\) is true, \(A\) is true as well. </p>
+<div class="definition_thmwrapper theorem-style-definition" id="semantic-entailment">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">1.10</span>
+  </div>
+  <div class="definition_thmcontent">
+  <p> If \(\Gamma \) is a set of formulas and \(A\) a formula, then \(\Gamma \vDash A\) iif for every model \(M = \langle W, R, V \rangle \) and world \(w \in W\), if \(M, w \vDash B\) for every \(B \in \Gamma \), then \(M, w \vDash A\). </p>
+<p>If \(\Gamma \) contains a single formula \(B\), then we write \(B \vDash A\). </p>
+
+  </div>
+</div>
+<h1 id="a0000000008">2 Properties of accessibility relations</h1>
+<p>Many modal formulas turn out to be characteristic of simple, and even familiar, properties of the accessibility relation. In one direction, that means that any model that has a given property makes a corresponding formula (and all its substitution instances) true. </p>
+<p>The five classical examples of kinds of accessibility relations and the formulas the truth of which they guarantee are listed in Table&#160;<a href="index.html#tab:table-schemata-relations">1</a>. </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="proof:truth-guarantee">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">2.1</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> Let \(M = \langle W, R, V \rangle \) be a model. If \(R\) has the property on the left side of Table&#160;<a href="index.html#tab:table-schemata-relations">1</a>, then every instance of the formula on the right side is true in \(M\). </p>
+
+  </div>
+</div>
+<div class="proof_wrapper" id="a0000000009">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">â–¼</span>
+  </div>
+  <div class="proof_content">
+  <p> We prove the validity of the modal axioms as follows: </p>
 <ul class="itemize">
-  <li><p>a model \(\langle W, R, \Vdash \rangle \), if \(w \Vdash A\) for all \(w \in W\), </p>
+  <li><p><b class="bfseries">modal axiom K valid</b>: modal_axiom_K_valid<br />By unfolding the definition of \(\Box \) and applying function application at accessible worlds. </p>
 </li>
-  <li><p>a frame \(\langle W, R \rangle \), if it is valid in \(\langle W, R, \Vdash \rangle \) for all possible choices of \(\Vdash \), </p>
+  <li><p><b class="bfseries">modal axiom T valid</b>: <br />By reflexivity of the accessibility relation and unfolding of \(\Box \). </p>
 </li>
-  <li><p>a class \(C\) of frames or models, if it is valid in every member of \(C\). </p>
+  <li><p><b class="bfseries">modal dense valid</b>: modal_dende_valid<br />By using density of the accessibility relation and applying the nested \(\Box \) accordingly. </p>
+</li>
+  <li><p><b class="bfseries">modal axiom 4 valid</b>: modal_axiom_4_valid<br />By transitivity of the accessibility relation and unfolding the definition of nested \(\Box \). </p>
+</li>
+  <li><p><b class="bfseries">modal axiom D valid</b>: valid_D_implies_serial<br />By seriality, we find an accessible world witnessing the \(\diamond \) modality. </p>
+</li>
+  <li><p><b class="bfseries">modal axiom B valid</b>: modal_axiom_B_valid<br />By symmetry of the accessibility relation and constructing a witness for \(\diamond \). </p>
+</li>
+  <li><p><b class="bfseries">modal axiom 5 valid</b>: modal_axiom_5_valid<br />By Euclidean property of the relation and unfolding \(\diamond \) and \(\Box \). </p>
 </li>
 </ul>
-<p>Consider the schema \( T : \Box A \to A \). \( T \) is valid in any reflexive frame \( \langle W, R \rangle \): if \( w \Vdash \Box A \), then \( w \Vdash A \) since \( w \,  R \,  w \). On the other hand, a frame which validates \( T \) has to be reflexive: fix \( w \in W \), and define satisfaction of a propositional variable \( p \) as follows: \( u \Vdash p \) if and only if \( w \,  R \,  u \). Then \( w \Vdash \Box p \), thus \( w \Vdash p \) by \( T \), which means \( w \,  R \,  w \) using the definition of \( \Vdash \). \( T \) corresponds to the class of reflexive Kripke frames. </p>
-<h1 id="a0000000003">Common Modal Axiom Schemata</h1>
-<p>The following table lists common modal axioms together with their corresponding classes. </p>
-<div class="displaymath" id="a0000000004">
-  \[  \begin{array}{|c|c|c|} \hline \textbf{Name} &  \textbf{Axiom} &  \textbf{Frame Condition} \\ \hline \textbf{K} &  \Box (A \to B) \to (\Box A \to \Box B) &  \text{Holds true for any frames} \\ \hline \textbf{T} &  \Box A \to A &  \text{Reflexive: } w\, R\, w \\ \hline - &  \Box \Box A \to \Box A &  \text{Dense: } w\, R\, u \Rightarrow \exists v\, (w\, R\, v \land v\, R\, u) \\ \hline \textbf{4} &  \Box A \to \Box \Box A &  \text{Transitive: } w\, R\, v \wedge v\, R\, u \Rightarrow w\, R\, u \\ \hline \textbf{D} &  \Box A \to \Diamond A \text{ or } \Diamond \top \text{ or } \neg \Box \bot &  \text{Serial: } \forall w\, \exists v\, (w\, R\, v) \\ \hline \textbf{B} &  A \to \Box \Diamond A \text{ or } \Diamond \Box A \to A &  \text{Symmetric: } w\, R\, v \Rightarrow v\, R\, w \\ \hline \textbf{5} &  \Diamond A \to \Box \Diamond A &  \text{Euclidean: } w\, R\, u \land w\, R\, v \Rightarrow u\, R\, v \\ \end{array}  \]
+
+  </div>
 </div>
-<h1 id="a0000000005">Examples</h1>
+<h1 id="a0000000010">3 Frame definability</h1>
+<p>One question that interests modal logicians is the relationship between the accessibility relation and the truth of certain formulas in models with that accessibility relation. </p>
+<p>It turns out, however, that truth in models is not appropriate for bringing out such correspondences between formulas and properties of the accessibility relation, as special valuations may validate axioms even though the underlying frame has no nice behavior at all. The solution is to remove the variable assignment \(V\) from the equation beuse the correspondence between schemas and properties of the accessibility relation \(R\) turs out to be at the level of frames. </p>
+<p>We can define \(F \vDash A\), the notion of a formula being <em>valid in a frame</em>, as: \(M \vDash A\) for all models \(M\) based on \(F\). With this notation, we can establish <em>correspondence relations</em> between formulas and classes of frames. For example: \(F \vDash \Box p \rightarrow p \quad \text{if and only if} \quad F \text{ is reflexive.}\) </p>
+<div class="definition_thmwrapper theorem-style-definition" id="valid-in-frame">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">3.1</span>
+  </div>
+  <div class="definition_thmcontent">
+  <p> valid_on_frame </p>
+<p>If \(F\) is a frame, we say that a formula \(A\) is <em>valid in \(F\)</em>, written \(F \Vdash A\), iff \(M \Vdash A\) for every model \(M\) based on \(F\). </p>
+<p>If \(\mathcal{F}\) is a class of frames, we say \(A\) is <em>valid in</em> \(\mathcal{F}\), written \(\mathcal{F} \Vdash A\), iff \(F \Vdash A\) for every frame \(F \in \mathcal{F}\). </p>
+
+  </div>
+</div>
+<p>Even though the converse implications of Theorem&#160;<a href="index.html#proof:truth-guarantee">2.1</a> fail, they hold if we replace “model” by “frame”: for the properties considered in Theorem&#160;<a href="index.html#proof:truth-guarantee">2.1</a>, it is true that if a formula is valid in a frame then the accessibility relation of that frame has the corresponding property. So, the formulas considered <em>define</em> the classes of frames that have the corresponding property. </p>
+<div class="definition_thmwrapper theorem-style-definition" id="def:frame-definition">
+  <div class="definition_thmheading">
+    <span class="definition_thmcaption">
+    Definition
+    </span>
+    <span class="definition_thmlabel">3.2</span>
+  </div>
+  <div class="definition_thmcontent">
+  <p> If \(\mathcal{F}\) is a class of frames, we say that a formula \(A\) <em>defines</em> \(\mathcal{F}\) iff \(F \vDash A\) for all and only frames \(F \in \mathcal{F}\). </p>
+
+  </div>
+</div>
+<p>We now proceed to establish the full definability results for frames. </p>
+<div class="theorem_thmwrapper theorem-style-plain" id="proof:definability">
+  <div class="theorem_thmheading">
+    <span class="theorem_thmcaption">
+    Theorem
+    </span>
+    <span class="theorem_thmlabel">3.3</span>
+  </div>
+  <div class="theorem_thmcontent">
+  <p> tab:table-schemata-relations </p>
+<p>If the formula on the right side of Table&#160;<a href="index.html#tab:table-schemata-relations">1</a> is valid in a frame \(F\), then \(F\) has the property on the left side. </p>
+
+  </div>
+</div>
+<div class="proof_wrapper" id="a0000000011">
+  <div class="proof_heading">
+    <span class="proof_caption">
+    Proof
+    </span>
+    <span class="expand-proof">â–¼</span>
+  </div>
+  <div class="proof_content">
+  <p> We prove the implications of validity on frame properties as follows: </p>
+<ul class="itemize">
+  <li><p><b class="bfseries">valid T implies reflexive</b>: valid_T_implies_reflexive<br />By defining a valuation reflecting the accessibility relation and applying the \(\Box \Rightarrow \) property. </p>
+</li>
+  <li><p><b class="bfseries">valid 4 implies symmetric</b>: valid_4_implies_symmetric<br />By contraposition: assume failure of transitivity and build a valuation violating the \(\Box \Rightarrow \Box \Box \) property. </p>
+</li>
+  <li><p><b class="bfseries">valid D implies serial</b>: valid_D_implies_serial<br />By contraposition: assume no successor exists and construct a counterexample model violating \(\Diamond \). </p>
+</li>
+  <li><p><b class="bfseries">valid B implies symmetric</b>: valid_B_implies_symmetric<br />By contraposition: assume asymmetry and derive a contradiction from the validity of \(\Box (\diamond p)\). </p>
+</li>
+  <li><p><b class="bfseries">valid 5 implies symmetric</b>: valid_5_implies_symmetric<br />By contraposition: assume failure of Euclidean property and construct a counterexample valuation to contradict \(\Box (\diamond p)\). </p>
+</li>
+</ul>
+
+  </div>
+</div>
+<div class="table"  id="tab:table-schemata-relations">
+   <div class="centered"><div class="displaymath" id="a0000000012">
+  \[  \begin{array}{|c|c|c|} \hline \textbf{Name} &  \textbf{Axiom} &  \textbf{Frame Condition} \\ \hline \textbf{K} &  \Box (A \to B) \to (\Box A \to \Box B) &  \text{Holds true for any frames} \\ \hline \textbf{T} &  \Box A \to A &  \text{Reflexive: } w\, R\, w \\ \hline - &  \Box \Box A \to \Box A &  \text{Dense: } w\, R\, u \Rightarrow \exists v\, (w\, R\, v \land v\, R\, u) \\ \hline \textbf{4} &  \Box A \to \Box \Box A &  \text{Transitive: } w\, R\, v \wedge v\, R\, u \Rightarrow w\, R\, u \\ \hline \textbf{D} &  \Box A \to \Diamond A \text{ or } \Diamond \top \text{ or } \neg \Box \bot &  \text{Serial: } \forall w\, \exists v\, (w\, R\, v) \\ \hline \textbf{B} &  A \to \Box \Diamond A \text{ or } \Diamond \Box A \to A &  \text{Symmetric: } w\, R\, v \Rightarrow v\, R\, w \\ \hline \textbf{5} &  \Diamond A \to \Box \Diamond &  \text{Euclidean: } w\, R\, u \land w\, R\, v \Rightarrow u\, R\, v \\ \end{array}  \]
+</div> <figcaption>
+  <span class="caption_title">Table</span> 
+  <span class="caption_ref">1</span> 
+  <span class="caption_text">The following table lists common modal axioms together with their corresponding classes. The implication of axiom to frame condition follows from Theorem&#160;<a href="index.html#proof:truth-guarantee">2.1</a> and the converse from Theorem&#160;<a href="index.html#proof:definability">3.3</a></span> 
+</figcaption>  </div>
+</div>
+<h1 id="a0000000013">Examples</h1>
 <p> Time permitting, we will formalize some examples. This section will thus be extended in due time. </p>
 
 </div> <!--main-text -->
