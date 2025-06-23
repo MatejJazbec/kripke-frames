@@ -295,7 +295,7 @@ We now proceed to establish the full definability results for frames.
     \item \textbf{valid T implies reflexive}: \lean{valid_T_implies_reflexive}\leanok \\
     By defining a valuation reflecting the accessibility relation and applying the \(\Box \Rightarrow\) property.
 
-    \item \textbf{valid 4 implies symmetric}: \lean{valid_4_implies_symmetric}\leanok\\
+    \item \textbf{valid 4 implies transitive}: \lean{valid_4_implies_transitive}\leanok\\
     By contraposition: assume failure of transitivity and build a valuation violating the \(\Box \Rightarrow \Box\Box\) property.
 
     \item \textbf{valid D implies serial}: \lean{valid_D_implies_serial}\leanok\\
@@ -304,7 +304,7 @@ We now proceed to establish the full definability results for frames.
    \item \textbf{valid B implies symmetric}: \lean{valid_B_implies_symmetric}\leanok\\
     By contraposition: assume asymmetry and derive a contradiction from the validity of \(\Box(\diamond p)\).
 
-    \item \textbf{valid 5 implies symmetric}: \lean{valid_5_implies_symmetric}\leanok\\
+    \item \textbf{valid 5 implies euclidean}: \lean{valid_5_implies_euclidean}\leanok\\
     By contraposition: assume failure of Euclidean property and construct a counterexample valuation to contradict \(\Box(\diamond p)\).
   \end{itemize}
 \end{proof}
