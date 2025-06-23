@@ -23,3 +23,4 @@ valid_T_implies_reflexive
 valid_B_implies_symmetric
 valid_4_implies_transitive
 valid_5_implies_euclidean
+true_in_model
