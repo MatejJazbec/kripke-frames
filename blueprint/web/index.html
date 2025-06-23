@@ -56,7 +56,7 @@
     <span class="definition_thmlabel">1.2</span>
   </div>
   <div class="definition_thmcontent">
-  <p> KripkeModel A <em>Kripke model</em> for the basic modal language is a triple \(M = \langle W, R, V \rangle \), where: </p>
+  <p> KripkeModel def:KripkeFrame A <em>Kripke model</em> for the basic modal language is a triple \(M = \langle W, R, V \rangle \), where: </p>
 <ol class="enumerate">
   <li><p>\(W\) is a nonempty set of <em>worlds</em>, </p>
 </li>
@@ -100,7 +100,7 @@
     <span class="definition_thmlabel">1.4</span>
   </div>
   <div class="definition_thmcontent">
-  <p> true_in_model A formula \(A\) is <em>true in a model</em> \(M = \langle W, R, V \rangle \), written \(M \Vdash A\), iff \(M, w \Vdash A\) for every \(w \in W\). </p>
+  <p> true_in_model truth-of-formula A formula \(A\) is <em>true in a model</em> \(M = \langle W, R, V \rangle \), written \(M \Vdash A\), iff \(M, w \Vdash A\) for every \(w \in W\). </p>
 
   </div>
 </div>
@@ -116,7 +116,7 @@
     <span class="definition_thmlabel">1.5</span>
   </div>
   <div class="definition_thmcontent">
-  <p> A formula \(A\) is <em>valid in a class</em> \(\mathcal{C}\) of models if it is true in every model in \(\mathcal{C}\) (i.e., true at every world in every model in \(\mathcal{C}\)). If \(A\) is valid in \(\mathcal{C}\), we write \(\mathcal{C} \vDash A\), and we write \(\vDash A\) if \(A\) is valid in the class of all models. </p>
+  <p> true-in-model A formula \(A\) is <em>valid in a class</em> \(\mathcal{C}\) of models if it is true in every model in \(\mathcal{C}\) (i.e., true at every world in every model in \(\mathcal{C}\)). If \(A\) is valid in \(\mathcal{C}\), we write \(\mathcal{C} \vDash A\), and we write \(\vDash A\) if \(A\) is valid in the class of all models. </p>
 
   </div>
 </div>
@@ -128,7 +128,7 @@
     <span class="definition_thmlabel">1.6</span>
   </div>
   <div class="definition_thmcontent">
-  <p> A <em>schema</em>, i.e., a set of formulas comprising all and only the substitution instances of some modal characteristic formula \(C\), is <em>true in a model</em> if and only if all of its instances are (where a formula \(A\) is an <em>instance</em> of a schema if it is a member of the set); and a schema is <em>valid</em> if and only if it is true in every model. </p>
+  <p> valid-in-class A <em>schema</em>, i.e., a set of formulas comprising all and only the substitution instances of some modal characteristic formula \(C\), is <em>true in a model</em> if and only if all of its instances are (where a formula \(A\) is an <em>instance</em> of a schema if it is a member of the set); and a schema is <em>valid</em> if and only if it is true in every model. </p>
 
   </div>
 </div>
@@ -140,7 +140,7 @@
     <span class="proposition_thmlabel">1.7</span>
   </div>
   <div class="proposition_thmcontent">
-  <p> dual_valid The following schema, called the <em>duality schema</em>, is valid: </p>
+  <p> dual_valid truth-of-formula The following schema, called the <em>duality schema</em>, is valid: </p>
 <div class="displaymath" id="a0000000005">
   \[  \Diamond A \leftrightarrow \neg \Box \neg A.  \]
 </div>
@@ -167,7 +167,7 @@
     <span class="proposition_thmlabel">1.8</span>
   </div>
   <div class="proposition_thmcontent">
-  <p> If \(A\) and \(A \rightarrow B\) are true at a world in a model, then so is \(B\). Hence, the valid formulas are closed under modus ponens. </p>
+  <p> valid-in-class If \(A\) and \(A \rightarrow B\) are true at a world in a model, then so is \(B\). Hence, the valid formulas are closed under modus ponens. </p>
 
   </div>
 </div>
@@ -179,7 +179,7 @@
     <span class="proposition_thmlabel">1.9</span>
   </div>
   <div class="proposition_thmcontent">
-  <p> A formula \(A\) is valid iff all its substitution instances are. In other words, a schema is valid iff its characteristic formula is. </p>
+  <p> valid-schema A formula \(A\) is valid iff all its substitution instances are. In other words, a schema is valid iff its characteristic formula is. </p>
 
   </div>
 </div>
@@ -193,7 +193,7 @@
     <span class="definition_thmlabel">1.10</span>
   </div>
   <div class="definition_thmcontent">
-  <p> If \(\Gamma \) is a set of formulas and \(A\) a formula, then \(\Gamma \vDash A\) iif for every model \(M = \langle W, R, V \rangle \) and world \(w \in W\), if \(M, w \vDash B\) for every \(B \in \Gamma \), then \(M, w \vDash A\). </p>
+  <p> KripkeModel,truth-of-formula If \(\Gamma \) is a set of formulas and \(A\) a formula, then \(\Gamma \vDash A\) iif for every model \(M = \langle W, R, V \rangle \) and world \(w \in W\), if \(M, w \vDash B\) for every \(B \in \Gamma \), then \(M, w \vDash A\). </p>
 <p>If \(\Gamma \) contains a single formula \(B\), then we write \(B \vDash A\). </p>
 
   </div>
@@ -209,7 +209,7 @@
     <span class="theorem_thmlabel">2.1</span>
   </div>
   <div class="theorem_thmcontent">
-  <p> Let \(M = \langle W, R, V \rangle \) be a model. If \(R\) has the property on the left side of Table&#160;<a href="index.html#tab:table-schemata-relations">1</a>, then every instance of the formula on the right side is true in \(M\). </p>
+  <p> modal_axiom_K_valid modal_axiom_T_valid modal_dense_valid modal_axiom_4_valid modal_axiom_D_valid modal_axiom_B_valid modal_axiom_5_valid KripkeModel, valid-schema Let \(M = \langle W, R, V \rangle \) be a model. If \(R\) has the property on the left side of Table&#160;<a href="index.html#tab:table-schemata-relations">1</a>, then every instance of the formula on the right side is true in \(M\). </p>
 
   </div>
 </div>
@@ -223,19 +223,19 @@
   <div class="proof_content">
   <p> We prove the validity of the modal axioms as follows: </p>
 <ul class="itemize">
-  <li><p><b class="bfseries">modal axiom K valid</b>: modal_axiom_K_valid<br />By unfolding the definition of \(\Box \) and applying function application at accessible worlds. </p>
+  <li><p><b class="bfseries">modal axiom K valid</b>: <br />By unfolding the definition of \(\Box \) and applying function application at accessible worlds. </p>
 </li>
   <li><p><b class="bfseries">modal axiom T valid</b>: <br />By reflexivity of the accessibility relation and unfolding of \(\Box \). </p>
 </li>
-  <li><p><b class="bfseries">modal dense valid</b>: modal_dense_valid<br />By using density of the accessibility relation and applying the nested \(\Box \) accordingly. </p>
+  <li><p><b class="bfseries">modal dense valid</b>: <br />By using density of the accessibility relation and applying the nested \(\Box \) accordingly. </p>
 </li>
-  <li><p><b class="bfseries">modal axiom 4 valid</b>: modal_axiom_4_valid<br />By transitivity of the accessibility relation and unfolding the definition of nested \(\Box \). </p>
+  <li><p><b class="bfseries">modal axiom 4 valid</b>: <br />By transitivity of the accessibility relation and unfolding the definition of nested \(\Box \). </p>
 </li>
-  <li><p><b class="bfseries">modal axiom D valid</b>: valid_D_implies_serial<br />By seriality, we find an accessible world witnessing the \(\diamond \) modality. </p>
+  <li><p><b class="bfseries">modal axiom D valid</b>: <br />By seriality, we find an accessible world witnessing the \(\diamond \) modality. </p>
 </li>
-  <li><p><b class="bfseries">modal axiom B valid</b>: modal_axiom_B_valid<br />By symmetry of the accessibility relation and constructing a witness for \(\diamond \). </p>
+  <li><p><b class="bfseries">modal axiom B valid</b>: <br />By symmetry of the accessibility relation and constructing a witness for \(\diamond \). </p>
 </li>
-  <li><p><b class="bfseries">modal axiom 5 valid</b>: modal_axiom_5_valid<br />By Euclidean property of the relation and unfolding \(\diamond \) and \(\Box \). </p>
+  <li><p><b class="bfseries">modal axiom 5 valid</b>: <br />By Euclidean property of the relation and unfolding \(\diamond \) and \(\Box \). </p>
 </li>
 </ul>
 
@@ -253,7 +253,7 @@
     <span class="definition_thmlabel">3.1</span>
   </div>
   <div class="definition_thmcontent">
-  <p> valid_on_frame </p>
+  <p> valid_on_frame KripkeModel,valid_on_frame </p>
 <p>If \(F\) is a frame, we say that a formula \(A\) is <em>valid in \(F\)</em>, written \(F \Vdash A\), iff \(M \Vdash A\) for every model \(M\) based on \(F\). </p>
 <p>If \(\mathcal{F}\) is a class of frames, we say \(A\) is <em>valid in</em> \(\mathcal{F}\), written \(\mathcal{F} \Vdash A\), iff \(F \Vdash A\) for every frame \(F \in \mathcal{F}\). </p>
 
@@ -281,7 +281,7 @@
     <span class="theorem_thmlabel">3.3</span>
   </div>
   <div class="theorem_thmcontent">
-  <p> tab:table-schemata-relations </p>
+  <p> KripkeFrame, valid-in-frame </p>
 <p>If the formula on the right side of Table&#160;<a href="index.html#tab:table-schemata-relations">1</a> is valid in a frame \(F\), then \(F\) has the property on the left side. </p>
 
   </div>
@@ -294,17 +294,17 @@
     <span class="expand-proof">â–¼</span>
   </div>
   <div class="proof_content">
-  <p> We prove the implications of validity on frame properties as follows: </p>
+  <p> valid_T_implies_reflexive valid_4_implies_transitive valid_D_implies_serial valid_B_implies_symmetric valid_5_implies_euclidean We prove the implications of validity on frame properties as follows: </p>
 <ul class="itemize">
-  <li><p><b class="bfseries">valid T implies reflexive</b>: valid_T_implies_reflexive<br />By defining a valuation reflecting the accessibility relation and applying the \(\Box \Rightarrow \) property. </p>
+  <li><p><b class="bfseries">valid T implies reflexive</b>: <br />By defining a valuation reflecting the accessibility relation and applying the \(\Box \Rightarrow \) property. </p>
 </li>
-  <li><p><b class="bfseries">valid 4 implies transitive</b>: valid_4_implies_transitive<br />By contraposition: assume failure of transitivity and build a valuation violating the \(\Box \Rightarrow \Box \Box \) property. </p>
+  <li><p><b class="bfseries">valid 4 implies transitive</b>: <br />By contraposition: assume failure of transitivity and build a valuation violating the \(\Box \Rightarrow \Box \Box \) property. </p>
 </li>
-  <li><p><b class="bfseries">valid D implies serial</b>: valid_D_implies_serial<br />By contraposition: assume no successor exists and construct a counterexample model violating \(\Diamond \). </p>
+  <li><p><b class="bfseries">valid D implies serial</b>: <br />By contraposition: assume no successor exists and construct a counterexample model violating \(\Diamond \). </p>
 </li>
-  <li><p><b class="bfseries">valid B implies symmetric</b>: valid_B_implies_symmetric<br />By contraposition: assume asymmetry and derive a contradiction from the validity of \(\Box (\diamond p)\). </p>
+  <li><p><b class="bfseries">valid B implies symmetric</b>: <br />By contraposition: assume asymmetry and derive a contradiction from the validity of \(\Box (\diamond p)\). </p>
 </li>
-  <li><p><b class="bfseries">valid 5 implies euclidean</b>: valid_5_implies_euclidean<br />By contraposition: assume failure of Euclidean property and construct a counterexample valuation to contradict \(\Box (\diamond p)\). </p>
+  <li><p><b class="bfseries">valid 5 implies euclidean</b>: <br />By contraposition: assume failure of Euclidean property and construct a counterexample valuation to contradict \(\Box (\diamond p)\). </p>
 </li>
 </ul>
 
@@ -320,7 +320,7 @@
 </figcaption>  </div>
 </div>
 <h1 id="a0000000013">Examples</h1>
-<p> A small example of a kripke frame is provided. example_frame</p>
+<p>example_frameA small example of a kripke frame is provided. </p>
 
 </div> <!--main-text -->
 </div> <!-- content-wrapper -->
