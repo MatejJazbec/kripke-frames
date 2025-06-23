@@ -9,7 +9,7 @@ The scope of the project is the formalisation of Kripke frames, the modal operat
 
 ## References
 
-- [textbook Boxes and Diamonds:]{https://bd.openlogicproject.org/} a textbook for modal and other intensional logics based on the Open Logic Project, by Richard Zach.
+- [textbook Boxes and Diamonds](https://bd.openlogicproject.org/ ): a textbook for modal and other intensional logics based on the Open Logic Project, by Richard Zach.
   
 - [Kripke Semantics (wikipedia entry)](https://en.wikipedia.org/wiki/Kripke_semantics) 
 
