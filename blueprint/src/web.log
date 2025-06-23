@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.11.22)  23 JUN 2025 04:45
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.11.22)  23 JUN 2025 06:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -352,7 +352,7 @@ and I'll forget about whatever was undefined.
 
 content.tex:48: Undefined control sequence.
 l.48     \uses
-              {def:KripkeFrame}
+              {def:kripke-frame}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -386,37 +386,46 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-
-[2]
-content.tex:99: Undefined control sequence.
-l.99   \lean
-            {true_in_model}
+content.tex:71: Undefined control sequence.
+l.71   \uses
+            {def:kripke-model,def:kripke-model}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:99: Missing $ inserted.
+
+
+[2]
+content.tex:100: Undefined control sequence.
+l.100   \lean
+             {KripkeModel,true_in_model}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+content.tex:100: Missing $ inserted.
 <inserted text> 
                 $
-l.99   \lean{true_
-                  in_model}
+l.100   \lean{KripkeModel,true_
+                               in_model}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-content.tex:99: Extra }, or forgotten $.
-l.99   \lean{true_in_model}
-                           
+content.tex:100: Extra }, or forgotten $.
+l.100   \lean{KripkeModel,true_in_model}
+                                        
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-content.tex:100: Undefined control sequence.
-l.100   \leanok
+content.tex:101: Undefined control sequence.
+l.101   \leanok
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -424,32 +433,32 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:101: Undefined control sequence.
-l.101   \uses
-             {truth-of-formula}
+content.tex:102: Undefined control sequence.
+l.102   \uses
+             {def:kripke-model,truth-of-formula}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:104: Missing $ inserted.
+content.tex:105: Missing $ inserted.
 <inserted text> 
                 $
-l.104 $M = \langle
+l.105 $M = \langle
                    W, R, V \rangle$, written $M \Vdash A$, iff
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (17.24426pt too wide) in paragraph at lines 99--106
-[]\TU/lmr/bx/n/10 Definition 1.4. \TU/lmr/m/n/10 true$[]\OML/cmm/m/it/10 n[]odel[]Aformula$\TU/lmr/m/n/10 A$\OML/cmm/m/it/10 is[]$\TU/lmr/m/n/10 M
+Overfull \hbox (173.20018pt too wide) in paragraph at lines 100--107
+[]\TU/lmr/bx/n/10 Definition 1.4. \TU/lmr/m/n/10 KripkeModel,true$[]\OML/cmm/m/it/10 n[]odel[]Aformula$\TU/lmr/m/n/10 A$\OML/cmm/m/it/10 is[]$\TU/lmr/m/n/10 M
  []
 
-content.tex:106: Missing } inserted.
+content.tex:107: Missing } inserted.
 <inserted text> 
                 }
-l.106 \end{definition}
+l.107 \end{definition}
                       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -457,26 +466,31 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-content.tex:128: Undefined control sequence.
-l.128   \uses
-             {true-in-model}
+content.tex:129: Undefined control sequence.
+l.129   \uses
+             {def:kripke-model,true-in-model}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:138: Undefined control sequence.
-l.138   \uses
-             {valid-in-class}
+
+Overfull \hbox (8.14227pt too wide) in paragraph at lines 129--135
+[]\TU/lmr/bx/n/10 Definition 1.5. \TU/lmr/m/n/10 def:kripke-model,true-in-model A formula $\OML/cmm/m/it/10 A$ \TU/lmr/m/n/10 is \TU/lmr/m/it/10 KripkeModel,valid
+ []
+
+content.tex:139: Undefined control sequence.
+l.139   \uses
+             {def:kripke-model,true-in-model,valid-in-class}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:150: Undefined control sequence.
-l.150   \lean
+content.tex:151: Undefined control sequence.
+l.151   \lean
              {dual_valid}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -487,16 +501,16 @@ and I'll forget about whatever was undefined.
 
 
 [3]
-content.tex:150: Missing $ inserted.
+content.tex:151: Missing $ inserted.
 <inserted text> 
                 $
-l.150   \lean{dual_
+l.151   \lean{dual_
                    valid}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-content.tex:150: Extra }, or forgotten $.
-l.150   \lean{dual_valid}
+content.tex:151: Extra }, or forgotten $.
+l.151   \lean{dual_valid}
                          
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -504,8 +518,8 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-content.tex:151: Undefined control sequence.
-l.151   \leanok
+content.tex:152: Undefined control sequence.
+l.152   \leanok
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -513,9 +527,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:152: Undefined control sequence.
-l.152   \uses
-             {truth-of-formula}
+content.tex:153: Undefined control sequence.
+l.153   \uses
+             {def:kripke-model,truth-of-formula, valid-schema}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -523,22 +537,22 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-content.tex:155: LaTeX Error: Bad math environment delimiter.
+content.tex:156: LaTeX Error: Bad math environment delimiter.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.155 \[
+l.156 \[
         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-content.tex:157: Missing \endgroup inserted.
+content.tex:158: Missing \endgroup inserted.
 <inserted text> 
                 \endgroup 
-l.157 \]
+l.158 \]
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -547,22 +561,22 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-content.tex:157: LaTeX Error: \begin{proposition} on input line 147 ended by \end{equation*}.
+content.tex:158: LaTeX Error: \begin{proposition} on input line 148 ended by \end{equation*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157 \]
+l.158 \]
         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-content.tex:157: Missing $ inserted.
+content.tex:158: Missing $ inserted.
 <inserted text> 
                 $
-l.157 \]
+l.158 \]
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -570,10 +584,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-content.tex:157: Missing } inserted.
+content.tex:158: Missing } inserted.
 <inserted text> 
                 }
-l.157 \]
+l.158 \]
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -582,32 +596,32 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (120.40814pt too wide) in paragraph at lines 150--158
+Overfull \hbox (289.362pt too wide) in paragraph at lines 151--159
 []\TU/lmr/bx/n/10 Proposition 1.7. \TU/lmr/m/it/10 dual$[]\OML/cmm/m/it/10 alid[]Thefollowingschema; calledthe[]; isvalid \OT1/cmr/m/n/10 :
  []
 
 
-content.tex:158: LaTeX Error: \begin{document} ended by \end{proposition}.
+content.tex:159: LaTeX Error: \begin{document} ended by \end{proposition}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158 \end{proposition}
+l.159 \end{proposition}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-content.tex:158: Extra \endgroup.
+content.tex:159: Extra \endgroup.
 \end  ...end#1\endcsname \@checkend {#1}\endgroup 
                                                   \UseHook {env/#1/after}\if...
-l.158 \end{proposition}
+l.159 \end{proposition}
                        
 Things are pretty mixed up, but I think the worst is over.
 
-content.tex:161: Undefined control sequence.
-l.161   \leanok
+content.tex:162: Undefined control sequence.
+l.162   \leanok
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -615,17 +629,17 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:167: Undefined control sequence.
-l.167   \uses
-             {valid-in-class}
+content.tex:168: Undefined control sequence.
+l.168   \uses
+             {def:kripke-model,valid-in-class}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:174: Undefined control sequence.
-l.174   \uses
+content.tex:175: Undefined control sequence.
+l.175   \uses
              {valid-schema}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -633,9 +647,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:186: Undefined control sequence.
-l.186   \uses
-             {KripkeModel,truth-of-formula}
+content.tex:187: Undefined control sequence.
+l.187   \uses
+             {def:kripke-model,truth-of-formula}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -643,10 +657,10 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `tab:table-schemata-relations' on page 4 undefined on input line 205.
+LaTeX Warning: Reference `tab:table-schemata-relations' on page 4 undefined on input line 206.
 
-content.tex:209: Undefined control sequence.
-l.209   \lean
+content.tex:210: Undefined control sequence.
+l.210   \lean
              {modal_axiom_K_valid}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -654,21 +668,21 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:209: Missing $ inserted.
+content.tex:210: Missing $ inserted.
 <inserted text> 
                 $
-l.209   \lean{modal_
+l.210   \lean{modal_
                     axiom_K_valid}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-content.tex:209: Double subscript.
-l.209   \lean{modal_axiom_K_
+content.tex:210: Double subscript.
+l.210   \lean{modal_axiom_K_
                             valid}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-content.tex:209: Extra }, or forgotten $.
-l.209   \lean{modal_axiom_K_valid}
+content.tex:210: Extra }, or forgotten $.
+l.210   \lean{modal_axiom_K_valid}
                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -676,8 +690,8 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-content.tex:210: Undefined control sequence.
-l.210   \lean
+content.tex:211: Undefined control sequence.
+l.211   \lean
              {modal_axiom_T_valid}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -685,13 +699,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:210: Double subscript.
-l.210   \lean{modal_axiom_T_
+content.tex:211: Double subscript.
+l.211   \lean{modal_axiom_T_
                             valid}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-content.tex:211: Undefined control sequence.
-l.211   \lean
+content.tex:212: Undefined control sequence.
+l.212   \lean
              {modal_dense_valid}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -699,8 +713,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:212: Undefined control sequence.
-l.212   \lean
+content.tex:213: Undefined control sequence.
+l.213   \lean
              {modal_axiom_4_valid}\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -708,13 +722,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:212: Double subscript.
-l.212   \lean{modal_axiom_4_
+content.tex:213: Double subscript.
+l.213   \lean{modal_axiom_4_
                             valid}\
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-content.tex:213: Undefined control sequence.
-l.213   \lean
+content.tex:214: Undefined control sequence.
+l.214   \lean
              {modal_axiom_D_valid}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -722,13 +736,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:213: Double subscript.
-l.213   \lean{modal_axiom_D_
+content.tex:214: Double subscript.
+l.214   \lean{modal_axiom_D_
                             valid}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-content.tex:214: Undefined control sequence.
-l.214   \lean
+content.tex:215: Undefined control sequence.
+l.215   \lean
              {modal_axiom_B_valid}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -736,13 +750,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:214: Double subscript.
-l.214   \lean{modal_axiom_B_
+content.tex:215: Double subscript.
+l.215   \lean{modal_axiom_B_
                             valid}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-content.tex:215: Undefined control sequence.
-l.215   \lean
+content.tex:216: Undefined control sequence.
+l.216   \lean
              {modal_axiom_5_valid}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -750,13 +764,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:215: Double subscript.
-l.215   \lean{modal_axiom_5_
+content.tex:216: Double subscript.
+l.216   \lean{modal_axiom_5_
                             valid}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-content.tex:216: Undefined control sequence.
-l.216   \leanok
+content.tex:217: Undefined control sequence.
+l.217   \leanok
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -764,35 +778,35 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:217: Undefined control sequence.
-l.217   \uses
-             {KripkeModel, valid-schema}
+content.tex:218: Undefined control sequence.
+l.218   \uses
+             {def:kripke-model, valid-schema, truth-of-formula}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:218: Missing $ inserted.
+content.tex:219: Missing $ inserted.
 <inserted text> 
                 $
-l.218   Let $M = \langle
+l.219   Let $M = \langle
                          W, R, V \rangle$ be a model. If $R$ has the property
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Reference `tab:table-schemata-relations' on page 4 undefined on input line 219.
+LaTeX Warning: Reference `tab:table-schemata-relations' on page 4 undefined on input line 220.
 
 
-Overfull \hbox (453.46385pt too wide) in paragraph at lines 209--221
+Overfull \hbox (585.93954pt too wide) in paragraph at lines 210--222
 []\TU/lmr/bx/n/10 Theorem 2.1. \TU/lmr/m/it/10 modal$[]\OML/cmm/m/it/10 xiom[][]alid[][][] [][][][]Let$\TU/lmr/m/it/10 M
  []
 
-content.tex:221: Missing } inserted.
+content.tex:222: Missing } inserted.
 <inserted text> 
                 }
-l.221 \end{theorem}
+l.222 \end{theorem}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -803,8 +817,8 @@ my insertion and my current dilemma will both disappear.
 
 
 [4]
-content.tex:270: Undefined control sequence.
-l.270   \lean
+content.tex:271: Undefined control sequence.
+l.271   \lean
              {valid_on_frame}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -812,16 +826,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:270: Missing $ inserted.
+content.tex:271: Missing $ inserted.
 <inserted text> 
                 $
-l.270   \lean{valid_
+l.271   \lean{valid_
                     on_frame}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-content.tex:270: Extra }, or forgotten $.
-l.270   \lean{valid_on_frame}
+content.tex:271: Extra }, or forgotten $.
+l.271   \lean{valid_on_frame}
                              
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -829,8 +843,8 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-content.tex:271: Undefined control sequence.
-l.271   \leanok
+content.tex:272: Undefined control sequence.
+l.272   \leanok
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -838,27 +852,27 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:272: Undefined control sequence.
-l.272   \uses
-             {KripkeModel,valid_on_frame}
+content.tex:273: Undefined control sequence.
+l.273   \uses
+             {def:kripke-frame}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:274: Missing $ inserted.
+content.tex:275: Missing $ inserted.
 <inserted text> 
                 $
-l.274 
+l.275 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-content.tex:274: Missing } inserted.
+content.tex:275: Missing } inserted.
 <inserted text> 
                 }
-l.274 
+l.275 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -867,37 +881,34 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-LaTeX Warning: Reference `thm:truth-guarantee' on page 5 undefined on input line 283.
+LaTeX Warning: Reference `thm:truth-guarantee' on page 5 undefined on input line 284.
 
 
-LaTeX Warning: Reference `thm:truth-guarantee' on page 5 undefined on input line 285.
+LaTeX Warning: Reference `thm:truth-guarantee' on page 5 undefined on input line 286.
+
+content.tex:293: Undefined control sequence.
+l.293   \uses
+             {def:kripke-frame}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
 
 [5]
-content.tex:301: Undefined control sequence.
-l.301   \uses
-             {KripkeFrame, valid-in-frame}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 content.tex:303: Undefined control sequence.
-l.303   \leanok
-               
+l.303   \uses
+             {def:kripke-model, def:kripke-frame, valid-in-frame, truth-of-f...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-LaTeX Warning: Reference `tab:table-schemata-relations' on page 6 undefined on input line 306.
-
-content.tex:311: Undefined control sequence.
-l.311   \lean
+content.tex:304: Undefined control sequence.
+l.304   \lean
              {valid_T_implies_reflexive}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -905,21 +916,21 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:311: Missing $ inserted.
+content.tex:304: Missing $ inserted.
 <inserted text> 
                 $
-l.311   \lean{valid_
+l.304   \lean{valid_
                     T_implies_reflexive}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-content.tex:311: Double subscript.
-l.311   \lean{valid_T_
+content.tex:304: Double subscript.
+l.304   \lean{valid_T_
                       implies_reflexive}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-content.tex:311: Extra }, or forgotten $.
-l.311   \lean{valid_T_implies_reflexive}
+content.tex:304: Extra }, or forgotten $.
+l.304   \lean{valid_T_implies_reflexive}
                                         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -927,8 +938,8 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-content.tex:312: Undefined control sequence.
-l.312   \lean
+content.tex:305: Undefined control sequence.
+l.305   \lean
              {valid_4_implies_transitive}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -936,13 +947,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:312: Double subscript.
-l.312   \lean{valid_4_
+content.tex:305: Double subscript.
+l.305   \lean{valid_4_
                       implies_transitive}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-content.tex:313: Undefined control sequence.
-l.313   \lean
+content.tex:306: Undefined control sequence.
+l.306   \lean
              {valid_D_implies_serial}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -950,13 +961,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:313: Double subscript.
-l.313   \lean{valid_D_
+content.tex:306: Double subscript.
+l.306   \lean{valid_D_
                       implies_serial}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-content.tex:314: Undefined control sequence.
-l.314   \lean
+content.tex:307: Undefined control sequence.
+l.307   \lean
              {valid_B_implies_symmetric}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -964,13 +975,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:314: Double subscript.
-l.314   \lean{valid_B_
+content.tex:307: Double subscript.
+l.307   \lean{valid_B_
                       implies_symmetric}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-content.tex:315: Undefined control sequence.
-l.315   \lean
+content.tex:308: Undefined control sequence.
+l.308   \lean
              {valid_5_implies_euclidean}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -978,13 +989,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:315: Double subscript.
-l.315   \lean{valid_5_
+content.tex:308: Double subscript.
+l.308   \lean{valid_5_
                       implies_euclidean}
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-content.tex:316: Undefined control sequence.
-l.316   \leanok
+content.tex:310: Undefined control sequence.
+l.310   \leanok
                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -992,30 +1003,19 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:318: Missing $ inserted.
+content.tex:312: Missing $ inserted.
 <inserted text> 
                 $
-l.318   \begin{itemize}
-                       
+l.312 
+      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-content.tex:318: Missing } inserted.
+content.tex:312: Missing } inserted.
 <inserted text> 
                 }
-l.318   \begin{itemize}
-                       
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-content.tex:318: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.318   \begin{itemize}
-                       
+l.312 
+      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1023,57 +1023,44 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (484.82181pt too wide) in paragraph at lines 311--318
-[]\TU/lmr/m/n/10 valid$[][]\OML/cmm/m/it/10 mplies[]eflexive[][][][]Weprovetheimplicationsofvalidityonframepropertiesasfollows \OT1/cmr/m/n/10 :
+Overfull \hbox (13.76942pt too wide) in paragraph at lines 303--312
+[]\TU/lmr/bx/n/10 Theorem 3.3. \TU/lmr/m/it/10 def:kripke-model, def:kripke-frame, valid-in-frame, truth-of-formula
  []
 
 
-content.tex:333: LaTeX Error: \begin{proof} on input line 310 ended by \end{itemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.333   \end{itemize}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+Overfull \hbox (161.9436pt too wide) in paragraph at lines 303--312
+\TU/lmr/m/it/10 valid$[][]\OML/cmm/m/it/10 mplies[]eflexive[][][][][]$ 
+ []
 
 
-content.tex:334: LaTeX Error: \begin{document} ended by \end{proof}.
+LaTeX Warning: Reference `tab:table-schemata-relations' on page 6 undefined on input line 313.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.334 \end{proof}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-content.tex:334: Extra \endgroup.
-\end  ...end#1\endcsname \@checkend {#1}\endgroup 
-                                                  \UseHook {env/#1/after}\if...
-l.334 \end{proof}
-                 
-Things are pretty mixed up, but I think the worst is over.
+content.tex:319: Undefined control sequence.
+l.319   \leanok
+               
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `thm:truth-guarantee' on page 6 undefined on input line 367.
+LaTeX Warning: Reference `thm:truth-guarantee' on page 6 undefined on input line 374.
 
 
-LaTeX Warning: Reference `thm:definability' on page 6 undefined on input line 367.
+LaTeX Warning: Reference `thm:definability' on page 6 undefined on input line 374.
 
 
-LaTeX Warning: Reference `thm:truth-guarantee' on page 6 undefined on input line 367.
+LaTeX Warning: Reference `thm:truth-guarantee' on page 6 undefined on input line 374.
 
 
-LaTeX Warning: Reference `thm:definability' on page 6 undefined on input line 367.
+LaTeX Warning: Reference `thm:definability' on page 6 undefined on input line 374.
 
-content.tex:398: Undefined control sequence.
-l.398 \section*{Examples}\lean
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+content.tex:405: Undefined control sequence.
+l.405 \section*{Examples}\lean
                               {example_frame}\leanok
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1081,16 +1068,16 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:398: Missing $ inserted.
+content.tex:405: Missing $ inserted.
 <inserted text> 
                 $
-l.398 \section*{Examples}\lean{example_
+l.405 \section*{Examples}\lean{example_
                                        frame}\leanok
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-content.tex:398: Extra }, or forgotten $.
-l.398 \section*{Examples}\lean{example_frame}
+content.tex:405: Extra }, or forgotten $.
+l.405 \section*{Examples}\lean{example_frame}
                                              \leanok
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1098,8 +1085,8 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-content.tex:398: Undefined control sequence.
-l.398 ...ion*{Examples}\lean{example_frame}\leanok
+content.tex:405: Undefined control sequence.
+l.405 ...ion*{Examples}\lean{example_frame}\leanok
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1107,10 +1094,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-content.tex:400: Missing $ inserted.
+content.tex:407: Missing $ inserted.
 <inserted text> 
                 $
-l.400 
+l.407 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1142,11 +1129,11 @@ Package rerunfilecheck Info: Checksums for `web.out':
  )
 (\end occurred inside a group at level 1)
 
-### simple group (level 1) entered at line 398 ({)
+### simple group (level 1) entered at line 405 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
  9079 strings out of 408788
- 136504 string characters out of 5747234
+ 136502 string characters out of 5747234
  534202 words of memory out of 5000000
  31886 multiletter control sequences out of 15000+600000
  566454 words of font info for 86 fonts, out of 8000000 for 9000

@@ -56,7 +56,7 @@
     <span class="definition_thmlabel">1.2</span>
   </div>
   <div class="definition_thmcontent">
-  <p> KripkeModel def:KripkeFrame A <em>Kripke model</em> for the basic modal language is a triple \(M = \langle W, R, V \rangle \), where: </p>
+  <p> KripkeModel def:kripke-frame A <em>Kripke model</em> for the basic modal language is a triple \(M = \langle W, R, V \rangle \), where: </p>
 <ol class="enumerate">
   <li><p>\(W\) is a nonempty set of <em>worlds</em>, </p>
 </li>
@@ -79,7 +79,7 @@
     <span class="definition_thmlabel">1.3</span>
   </div>
   <div class="definition_thmcontent">
-  <p> box diamond Truth of a formula \(A\) at world \(w\) in a model \(M\), in symbols \(M, w \Vdash A\), is defined, for the modal operators \(\Box \) and \(\Diamond \), inductively as follows: </p>
+  <p> box diamond def:kripke-model,def:kripke-model Truth of a formula \(A\) at world \(w\) in a model \(M\), in symbols \(M, w \Vdash A\), is defined, for the modal operators \(\Box \) and \(\Diamond \), inductively as follows: </p>
 <ol class="enumerate">
   <li><p>\(A \equiv \Box B\): \(M, w \Vdash \Box B\) iff for all \(w' \in W\) such that \(Rww'\), we have \(M, w' \Vdash B\). </p>
 </li>
@@ -100,7 +100,7 @@
     <span class="definition_thmlabel">1.4</span>
   </div>
   <div class="definition_thmcontent">
-  <p> true_in_model truth-of-formula A formula \(A\) is <em>true in a model</em> \(M = \langle W, R, V \rangle \), written \(M \Vdash A\), iff \(M, w \Vdash A\) for every \(w \in W\). </p>
+  <p> KripkeModel,true_in_model def:kripke-model,truth-of-formula A formula \(A\) is <em>true in a model</em> \(M = \langle W, R, V \rangle \), written \(M \Vdash A\), iff \(M, w \Vdash A\) for every \(w \in W\). </p>
 
   </div>
 </div>
@@ -116,7 +116,7 @@
     <span class="definition_thmlabel">1.5</span>
   </div>
   <div class="definition_thmcontent">
-  <p> true-in-model A formula \(A\) is <em>valid in a class</em> \(\mathcal{C}\) of models if it is true in every model in \(\mathcal{C}\) (i.e., true at every world in every model in \(\mathcal{C}\)). If \(A\) is valid in \(\mathcal{C}\), we write \(\mathcal{C} \vDash A\), and we write \(\vDash A\) if \(A\) is valid in the class of all models. </p>
+  <p> def:kripke-model,true-in-model A formula \(A\) is <em>KripkeModel,valid in a class</em> \(\mathcal{C}\) of models if it is true in every model in \(\mathcal{C}\) (i.e., true at every world in every model in \(\mathcal{C}\)). If \(A\) is valid in \(\mathcal{C}\), we write \(\mathcal{C} \vDash A\), and we write \(\vDash A\) if \(A\) is valid in the class of all models. </p>
 
   </div>
 </div>
@@ -128,7 +128,7 @@
     <span class="definition_thmlabel">1.6</span>
   </div>
   <div class="definition_thmcontent">
-  <p> valid-in-class A <em>schema</em>, i.e., a set of formulas comprising all and only the substitution instances of some modal characteristic formula \(C\), is <em>true in a model</em> if and only if all of its instances are (where a formula \(A\) is an <em>instance</em> of a schema if it is a member of the set); and a schema is <em>valid</em> if and only if it is true in every model. </p>
+  <p> def:kripke-model,true-in-model,valid-in-class A <em>schema</em>, i.e., a set of formulas comprising all and only the substitution instances of some modal characteristic formula \(C\), is <em>true in a model</em> iff all of its instances are (where a formula \(A\) is an <em>instance</em> of a schema if it is a member of the set); and a schema is <em>valid</em> if and only if it is true in every model. </p>
 
   </div>
 </div>
@@ -140,7 +140,7 @@
     <span class="proposition_thmlabel">1.7</span>
   </div>
   <div class="proposition_thmcontent">
-  <p> dual_valid truth-of-formula The following schema, called the <em>duality schema</em>, is valid: </p>
+  <p> dual_valid def:kripke-model,truth-of-formula, valid-schema The following schema, called the <em>duality schema</em>, is valid: </p>
 <div class="displaymath" id="a0000000005">
   \[  \Diamond A \leftrightarrow \neg \Box \neg A.  \]
 </div>
@@ -167,7 +167,7 @@
     <span class="proposition_thmlabel">1.8</span>
   </div>
   <div class="proposition_thmcontent">
-  <p> valid-in-class If \(A\) and \(A \rightarrow B\) are true at a world in a model, then so is \(B\). Hence, the valid formulas are closed under modus ponens. </p>
+  <p> def:kripke-model,valid-in-class If \(A\) and \(A \rightarrow B\) are true at a world in a model, then so is \(B\). Hence, the valid formulas are closed under modus ponens. </p>
 
   </div>
 </div>
@@ -193,7 +193,7 @@
     <span class="definition_thmlabel">1.10</span>
   </div>
   <div class="definition_thmcontent">
-  <p> KripkeModel,truth-of-formula If \(\Gamma \) is a set of formulas and \(A\) a formula, then \(\Gamma \vDash A\) iif for every model \(M = \langle W, R, V \rangle \) and world \(w \in W\), if \(M, w \vDash B\) for every \(B \in \Gamma \), then \(M, w \vDash A\). </p>
+  <p> def:kripke-model,truth-of-formula If \(\Gamma \) is a set of formulas and \(A\) a formula, then \(\Gamma \vDash A\) iif for every model \(M = \langle W, R, V \rangle \) and world \(w \in W\), if \(M, w \vDash B\) for every \(B \in \Gamma \), then \(M, w \vDash A\). </p>
 <p>If \(\Gamma \) contains a single formula \(B\), then we write \(B \vDash A\). </p>
 
   </div>
@@ -209,7 +209,7 @@
     <span class="theorem_thmlabel">2.1</span>
   </div>
   <div class="theorem_thmcontent">
-  <p> modal_axiom_K_valid modal_axiom_T_valid modal_dense_valid modal_axiom_4_valid modal_axiom_D_valid modal_axiom_B_valid modal_axiom_5_valid KripkeModel, valid-schema Let \(M = \langle W, R, V \rangle \) be a model. If \(R\) has the property on the left side of Table&#160;<a href="index.html#tab:table-schemata-relations">1</a>, then every instance of the formula on the right side is true in \(M\). </p>
+  <p> modal_axiom_K_valid modal_axiom_T_valid modal_dense_valid modal_axiom_4_valid modal_axiom_D_valid modal_axiom_B_valid modal_axiom_5_valid def:kripke-model, valid-schema, truth-of-formula Let \(M = \langle W, R, V \rangle \) be a model. If \(R\) has the property on the left side of Table&#160;<a href="index.html#tab:table-schemata-relations">1</a>, then every instance of the formula on the right side is true in \(M\). </p>
 
   </div>
 </div>
@@ -229,13 +229,13 @@
 </li>
   <li><p><b class="bfseries">modal dense valid</b>: <br />By using density of the accessibility relation and applying the nested \(\Box \) accordingly. </p>
 </li>
-  <li><p><b class="bfseries">modal axiom 4 valid</b>: <br />By transitivity of the accessibility relation and unfolding the definition of nested \(\Box \). </p>
+  <li><p><b class="bfseries">modal axiom 4 valid</b>: <br />By transitivity of the accessibility relation and unfolding the definition of nested \(\Box .\) </p>
 </li>
-  <li><p><b class="bfseries">modal axiom D valid</b>: <br />By seriality, we find an accessible world witnessing the \(\diamond \) modality. </p>
+  <li><p><b class="bfseries">modal axiom D valid</b>: <br />By seriality, we find an accessible world witnessing the \(\Diamond \) modality. </p>
 </li>
-  <li><p><b class="bfseries">modal axiom B valid</b>: <br />By symmetry of the accessibility relation and constructing a witness for \(\diamond \). </p>
+  <li><p><b class="bfseries">modal axiom B valid</b>: <br />By symmetry of the accessibility relation and constructing a witness for \(\Diamond \). </p>
 </li>
-  <li><p><b class="bfseries">modal axiom 5 valid</b>: <br />By Euclidean property of the relation and unfolding \(\diamond \) and \(\Box \). </p>
+  <li><p><b class="bfseries">modal axiom 5 valid</b>: <br />By Euclidean property of the relation and unfolding \(\Diamond \) and \(\Box \). </p>
 </li>
 </ul>
 
@@ -253,14 +253,14 @@
     <span class="definition_thmlabel">3.1</span>
   </div>
   <div class="definition_thmcontent">
-  <p> valid_on_frame KripkeModel,valid_on_frame </p>
+  <p> valid_on_frame def:kripke-frame </p>
 <p>If \(F\) is a frame, we say that a formula \(A\) is <em>valid in \(F\)</em>, written \(F \Vdash A\), iff \(M \Vdash A\) for every model \(M\) based on \(F\). </p>
 <p>If \(\mathcal{F}\) is a class of frames, we say \(A\) is <em>valid in</em> \(\mathcal{F}\), written \(\mathcal{F} \Vdash A\), iff \(F \Vdash A\) for every frame \(F \in \mathcal{F}\). </p>
 
   </div>
 </div>
 <p>Even though the converse implications of Theorem&#160;<a href="index.html#proof:truth-guarantee">2.1</a> fail, they hold if we replace “model” by “frame”: for the properties considered in Theorem&#160;<a href="index.html#proof:truth-guarantee">2.1</a>, it is true that if a formula is valid in a frame then the accessibility relation of that frame has the corresponding property. So, the formulas considered <em>define</em> the classes of frames that have the corresponding property. </p>
-<div class="definition_thmwrapper theorem-style-definition" id="def:frame-definition">
+<div class="definition_thmwrapper theorem-style-definition" id="def:class-of-frame">
   <div class="definition_thmheading">
     <span class="definition_thmcaption">
     Definition
@@ -268,7 +268,7 @@
     <span class="definition_thmlabel">3.2</span>
   </div>
   <div class="definition_thmcontent">
-  <p> If \(\mathcal{F}\) is a class of frames, we say that a formula \(A\) <em>defines</em> \(\mathcal{F}\) iff \(F \vDash A\) for all and only frames \(F \in \mathcal{F}\). </p>
+  <p> def:kripke-frame If \(\mathcal{F}\) is a class of frames, we say that a formula \(A\) <em>defines</em> \(\mathcal{F}\) iff \(F \vDash A\) for all and only frames \(F \in \mathcal{F}\). </p>
 
   </div>
 </div>
@@ -281,7 +281,7 @@
     <span class="theorem_thmlabel">3.3</span>
   </div>
   <div class="theorem_thmcontent">
-  <p> KripkeFrame, valid-in-frame </p>
+  <p> def:kripke-model, def:kripke-frame, valid-in-frame, truth-of-formula valid_T_implies_reflexive valid_4_implies_transitive valid_D_implies_serial valid_B_implies_symmetric valid_5_implies_euclidean </p>
 <p>If the formula on the right side of Table&#160;<a href="index.html#tab:table-schemata-relations">1</a> is valid in a frame \(F\), then \(F\) has the property on the left side. </p>
 
   </div>
@@ -294,25 +294,27 @@
     <span class="expand-proof">â–¼</span>
   </div>
   <div class="proof_content">
-  <p> valid_T_implies_reflexive valid_4_implies_transitive valid_D_implies_serial valid_B_implies_symmetric valid_5_implies_euclidean We prove the implications of validity on frame properties as follows: </p>
+  
+<p>We prove the implications of validity on frame properties as follows: </p>
 <ul class="itemize">
-  <li><p><b class="bfseries">valid T implies reflexive</b>: <br />By defining a valuation reflecting the accessibility relation and applying the \(\Box \Rightarrow \) property. </p>
+  <li><p><b class="bfseries">valid T implies reflexive</b>: <br />By defining a valuation reflecting the accessibility relation and applying the <b class="bfseries">T</b> axiom. </p>
 </li>
-  <li><p><b class="bfseries">valid 4 implies transitive</b>: <br />By contraposition: assume failure of transitivity and build a valuation violating the \(\Box \Rightarrow \Box \Box \) property. </p>
+  <li><p><b class="bfseries">valid 4 implies transitive</b>: <br />By contraposition: assume failure of transitivity and build a valuation violating the <b class="bfseries">4</b> axiom. </p>
 </li>
-  <li><p><b class="bfseries">valid D implies serial</b>: <br />By contraposition: assume no successor exists and construct a counterexample model violating \(\Diamond \). </p>
+  <li><p><b class="bfseries">valid D implies serial</b>: <br />By contraposition: assume no successor exists and construct a counterexample model violating \(\Diamond \)A. </p>
 </li>
-  <li><p><b class="bfseries">valid B implies symmetric</b>: <br />By contraposition: assume asymmetry and derive a contradiction from the validity of \(\Box (\diamond p)\). </p>
+  <li><p><b class="bfseries">valid B implies symmetric</b>: <br />By contraposition: assume asymmetry and derive a contradiction from the validity of \(\Box \Diamond A\). </p>
 </li>
-  <li><p><b class="bfseries">valid 5 implies euclidean</b>: <br />By contraposition: assume failure of Euclidean property and construct a counterexample valuation to contradict \(\Box (\diamond p)\). </p>
+  <li><p><b class="bfseries">valid 5 implies euclidean</b>: <br />By contraposition: assume failure of Euclidean property and construct a counterexample valuation to contradict \(\Box \Diamond A\). </p>
 </li>
 </ul>
 
   </div>
 </div>
+<p>We notice, that in the proof for <b class="bfseries">D</b> no mention was made of the valuation V. Hence, it proves p that if \( M \Vdash \textbf{D} \) then \( M \) is serial. So <b class="bfseries">D</b> defines the class of serial models, not just frames. </p>
 <div class="table"  id="tab:table-schemata-relations">
    <div class="centered"><div class="displaymath" id="a0000000012">
-  \[  \begin{array}{|c|c|c|} \hline \textbf{Name} &  \textbf{Axiom} &  \textbf{Frame Condition} \\ \hline \textbf{K} &  \Box (A \to B) \to (\Box A \to \Box B) &  \text{Holds true for any frames} \\ \hline \textbf{T} &  \Box A \to A &  \text{Reflexive: } w\, R\, w \\ \hline - &  \Box \Box A \to \Box A &  \text{Dense: } w\, R\, u \Rightarrow \exists v\, (w\, R\, v \land v\, R\, u) \\ \hline \textbf{4} &  \Box A \to \Box \Box A &  \text{Transitive: } w\, R\, v \wedge v\, R\, u \Rightarrow w\, R\, u \\ \hline \textbf{D} &  \Box A \to \Diamond A \text{ or } \Diamond \top \text{ or } \neg \Box \bot &  \text{Serial: } \forall w\, \exists v\, (w\, R\, v) \\ \hline \textbf{B} &  A \to \Box \Diamond A \text{ or } \Diamond \Box A \to A &  \text{Symmetric: } w\, R\, v \Rightarrow v\, R\, w \\ \hline \textbf{5} &  \Diamond A \to \Box \Diamond &  \text{Euclidean: } w\, R\, u \land w\, R\, v \Rightarrow u\, R\, v \\ \end{array}  \]
+  \[  \begin{array}{|c|c|c|} \hline \textbf{Name} &  \textbf{Axiom} &  \textbf{Frame Condition} \\ \hline \textbf{K} &  \Box (A \to B) \to (\Box A \to \Box B) &  \text{Holds true for any frames} \\ \hline \textbf{T} &  \Box A \to A &  \text{Reflexive: } w\, R\, w \\ \hline - &  \Box \Box A \to \Box A &  \text{Dense: } w\, R\, u \Rightarrow \exists v\, (w\, R\, v \land v\, R\, u) \\ \hline \textbf{4} &  \Box A \to \Box \Box A &  \text{Transitive: } w\, R\, v \wedge v\, R\, u \Rightarrow w\, R\, u \\ \hline \textbf{D} &  \Box A \to \Diamond A \text{ or } \Diamond \top \text{ or } \neg \Box \bot &  \text{Serial: } \forall w\, \exists v\, (w\, R\, v) \\ \hline \textbf{B} &  A \to \Box \Diamond A \text{ or } \Diamond \Box A \to A &  \text{Symmetric: } w\, R\, v \Rightarrow v\, R\, w \\ \hline \textbf{5} &  \Diamond A \to \Box \Diamond A &  \text{Euclidean: } w\, R\, u \land w\, R\, v \Rightarrow u\, R\, v \\ \end{array}  \]
 </div> <figcaption>
   <span class="caption_title">Table</span> 
   <span class="caption_ref">1</span> 

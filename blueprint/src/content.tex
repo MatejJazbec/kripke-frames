@@ -45,7 +45,7 @@ When $Rww'$ holds, we say that $w'$ is \emph{accessible} from $w$.
     %
     \lean{KripkeModel}
     \leanok
-    \uses{def:KripkeFrame}
+    \uses{def:kripke-frame}
     %
     A \emph{Kripke model} for the basic modal language is a triple $M = \langle W, R, V \rangle$, where:
     \begin{enumerate}
@@ -68,6 +68,7 @@ using truth tables for the non-modal operators.
   \lean{box}
   \lean{diamond}
   \leanok
+  \uses{def:kripke-model,def:kripke-model}
   %
   Truth of a formula $A$ at world $w$ in a model $M$, in symbols $M, w \Vdash A$, is defined, 
   for the modal operators $\Box$ and $\Diamond$, inductively as follows:
@@ -96,9 +97,9 @@ world in a given model. Let’s introduce a notation for this.
 \begin{definition}
   \label{true-in-model}
   %
-  \lean{true_in_model}
+  \lean{KripkeModel,true_in_model}
   \leanok
-  \uses{truth-of-formula}
+  \uses{def:kripke-model,truth-of-formula}
   %
   A formula $A$ is \emph{true in a model} 
 $M = \langle W, R, V \rangle$, written $M \Vdash A$, iff 
@@ -125,8 +126,8 @@ $\Box p \to p$ is valid in the class of reflexive models.
 
 \begin{definition}
   \label{valid-in-class}
-  \uses{true-in-model}
-  A formula $A$ is \emph{valid in a class} $\mathcal{C}$ 
+  \uses{def:kripke-model,true-in-model}
+  A formula $A$ is \emph{KripkeModel,valid in a class} $\mathcal{C}$ 
 of models if it is true in every model in $\mathcal{C}$ (i.e., true at every 
 world in every model in $\mathcal{C}$). If $A$ is valid in $\mathcal{C}$, we 
 write $\mathcal{C} \vDash A$, and we write $\vDash A$ if $A$ is valid in the 
@@ -135,10 +136,10 @@ class of all models.
 
 \begin{definition}
   \label{valid-schema}
-  \uses{valid-in-class}
+  \uses{def:kripke-model,true-in-model,valid-in-class}
 A \emph{schema}, i.e., a set of formulas comprising all and 
 only the substitution instances of some modal characteristic formula $C$, 
-is \emph{true in a model} if and only if all of its instances are 
+is \emph{true in a model} iff all of its instances are 
 (where a formula $A$ is an \emph{instance} of a schema if it is a 
 member of the set); and a schema is \emph{valid} if and only if it is 
 true in every model.
@@ -149,7 +150,7 @@ true in every model.
   %
   \lean{dual_valid}
   \leanok
-  \uses{truth-of-formula}
+  \uses{def:kripke-model,truth-of-formula, valid-schema}
   %  
 The following schema, called the \emph{duality schema}, is valid:
 \[
@@ -164,7 +165,7 @@ The following schema, called the \emph{duality schema}, is valid:
 
 \begin{proposition}
   \label{modus-ponens-validity}
-  \uses{valid-in-class}
+  \uses{def:kripke-model,valid-in-class}
   If $A$ and $A \rightarrow B$ are true at a world in a model,
   then so is $B$. Hence, the valid formulas are closed under modus ponens.
 \end{proposition}
@@ -183,7 +184,7 @@ $B$ is true, $A$ is true as well.
 
 \begin{definition}
   \label{semantic-entailment}
-  \uses{KripkeModel,truth-of-formula}
+  \uses{def:kripke-model,truth-of-formula}
   If $\Gamma$ is a set of formulas and $A$ a formula, then
   $\Gamma \vDash A$ iif
   for every model $M = \langle W, R, V \rangle$ and world $w \in W$,
@@ -214,7 +215,7 @@ listed in Table~\ref{tab:table-schemata-relations}.
   \lean{modal_axiom_B_valid}
   \lean{modal_axiom_5_valid}
   \leanok
-  \uses{KripkeModel, valid-schema}
+  \uses{def:kripke-model, valid-schema, truth-of-formula}
   Let $M = \langle W, R, V \rangle$ be a model. If $R$ has the property 
   on the left side of Table~\ref{tab:table-schemata-relations}, then every instance of the formula on the 
   right side is true in $M$.
@@ -232,16 +233,16 @@ listed in Table~\ref{tab:table-schemata-relations}.
     By using density of the accessibility relation and applying the nested \(\Box\) accordingly.
 
     \item \textbf{modal axiom 4 valid}: \\
-    By transitivity of the accessibility relation and unfolding the definition of nested \(\Box\).
+    By transitivity of the accessibility relation and unfolding the definition of nested \(\Box.\)
 
     \item \textbf{modal axiom D valid}:  \\
-    By seriality, we find an accessible world witnessing the \(\diamond\) modality.
+    By seriality, we find an accessible world witnessing the \(\Diamond\) modality.
 
     \item \textbf{modal axiom B valid}:  \\
-    By symmetry of the accessibility relation and constructing a witness for \(\diamond\).
+    By symmetry of the accessibility relation and constructing a witness for \(\Diamond\).
 
     \item \textbf{modal axiom 5 valid}: \\
-    By Euclidean property of the relation and unfolding \(\diamond\) and \(\Box\).
+    By Euclidean property of the relation and unfolding \(\Diamond\) and \(\Box\).
   \end{itemize}
 \end{proof}
 
@@ -269,7 +270,7 @@ $F \vDash \Box p \rightarrow p \quad \text{if and only if} \quad F \text{ is ref
   %
   \lean{valid_on_frame}
   \leanok
-  \uses{KripkeModel,valid_on_frame}
+  \uses{def:kripke-frame}
   %
   
   If $F$ is a frame, we say that a formula $A$ is \emph{valid in $F$}, written $F \Vdash A$,
@@ -288,7 +289,8 @@ has the corresponding property. So, the formulas considered
 \emph{define} the classes of frames that have the corresponding property.
 
 \begin{definition}
-  \label{def:frame-definition}
+  \label{def:class-of-frame}
+  \uses{def:kripke-frame}
   If $\mathcal{F}$ is a class of frames, we say that a formula $A$ 
   \emph{defines} $\mathcal{F}$ iff $F \vDash A$ for all and only frames 
   $F \in \mathcal{F}$.
@@ -298,7 +300,12 @@ We now proceed to establish the full definability results for frames.
 
 \begin{theorem}
   \label{thm:definability}
-  \uses{KripkeFrame, valid-in-frame}
+  \uses{def:kripke-model, def:kripke-frame, valid-in-frame, truth-of-formula}
+  \lean{valid_T_implies_reflexive}
+  \lean{valid_4_implies_transitive}
+  \lean{valid_D_implies_serial}
+  \lean{valid_B_implies_symmetric}
+  \lean{valid_5_implies_euclidean}
   %
   \leanok
   %
@@ -307,31 +314,31 @@ We now proceed to establish the full definability results for frames.
   then $F$ has the property on the left side.
 \end{theorem}
 
-\begin{proof} \label{proof:definability}
-  \lean{valid_T_implies_reflexive}
-  \lean{valid_4_implies_transitive}
-  \lean{valid_D_implies_serial}
-  \lean{valid_B_implies_symmetric}
-  \lean{valid_5_implies_euclidean}
+\begin{proof} 
+  \label{proof:definability}
   \leanok
+
   We prove the implications of validity on frame properties as follows:
   \begin{itemize}
     \item \textbf{valid T implies reflexive}: \\
-    By defining a valuation reflecting the accessibility relation and applying the \(\Box \Rightarrow\) property.
+    By defining a valuation reflecting the accessibility relation and applying the \textbf{T} axiom.
 
     \item \textbf{valid 4 implies transitive}: \\
-    By contraposition: assume failure of transitivity and build a valuation violating the \(\Box \Rightarrow \Box\Box\) property.
+    By contraposition: assume failure of transitivity and build a valuation violating the \textbf{4} axiom.
 
     \item \textbf{valid D implies serial}: \\
-    By contraposition: assume no successor exists and construct a counterexample model violating \(\Diamond\).
+    By contraposition: assume no successor exists and construct a counterexample model violating \(\Diamond\)A.
 
    \item \textbf{valid B implies symmetric}: \\
-    By contraposition: assume asymmetry and derive a contradiction from the validity of \(\Box(\diamond p)\).
+    By contraposition: assume asymmetry and derive a contradiction from the validity of \(\Box\Diamond A\).
 
     \item \textbf{valid 5 implies euclidean}: \\
-    By contraposition: assume failure of Euclidean property and construct a counterexample valuation to contradict \(\Box(\diamond p)\).
+    By contraposition: assume failure of Euclidean property and construct a counterexample valuation to contradict \(\Box \Diamond A\).
   \end{itemize}
 \end{proof}
+
+We notice, that in the proof for \textbf{D} no mention was made of the valuation V. Hence, it proves p
+that if \( M \Vdash \textbf{D} \) then \( M \) is serial. So \textbf{D} defines the class of serial models, not just frames.
 
 \begin{table}[h]
   \centering
@@ -358,7 +365,7 @@ We now proceed to establish the full definability results for frames.
   \textbf{B} & A \to \Box\Diamond A \text{ or } \Diamond\Box A \to A 
             & \text{Symmetric: } w\,R\,v \Rightarrow v\,R\,w \\
   \hline
-  \textbf{5} & \Diamond A \to \Box\Diamond  
+  \textbf{5} & \Diamond A \to \Box\Diamond  A
             & \text{Euclidean: } w\,R\,u \land w\,R\,v \Rightarrow u\,R\,v \\
   \hline
   \end{array}
