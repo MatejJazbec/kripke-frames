@@ -1,5 +1,6 @@
 import Mathlib.Tactic
-
+import Mathlib.Order.BooleanAlgebra
+import Init.System
 
 
 -- Definition of Kripke frame
@@ -30,17 +31,231 @@ def KripkeFrame_is_euclidean (F : KripkeFrame) : Prop :=
 --   (refl : ∀ w : W, R w w)                        -- Reflexivity
 --   (trans : ∀ w v u : W, R w v → R v u → R w u)   -- Transitivity
 
+-- -- Definition of Kripke model
+-- structure KripkeModel extends KripkeFrame where
+--   (V : W → Prop → Prop)  -- Valuation function mapping worlds to truth values of propositions
+
+
+-- -- Definition of modalities
+-- def box (F : KripkeModel) (φ : F.W → Prop) (w : F.W) : Prop :=
+--   ∀ w' : F.W, F.R w w' → φ w'
+
+-- def diamond (F : KripkeModel) (φ : F.W → Prop) (w : F.W) : Prop :=
+--   ∃ w' : F.W, F.R w w' ∧ φ w'
+
 -- Definition of Kripke model
-structure KripkeModel extends KripkeFrame where
-  (V : W → Prop → Prop)  -- Valuation function mapping worlds to truth values of propositions
+structure KripkeModel (Atom : Type) extends KripkeFrame where
+  (V : Atom → W → Prop)  -- Valuation function mapping worlds to truth values of propositions
+
+-- section Boolean
+
+variable {F : KripkeFrame}
+
+instance: Bot (F.W → Prop) where
+  bot := (fun _ => False)
+
+instance : Top (F.W → Prop) where
+  top := fun _ => True
+
+instance: LE (F.W → Prop) where
+  le := fun p q => ∀ w, p w → q w
 
 
--- Definition of modalities
-def box (F : KripkeModel) (φ : F.W → Prop) (w : F.W) : Prop :=
-  ∀ w' : F.W, F.R w w' → φ w'
+instance : Preorder (F.W → Prop) where
+  le_refl := by intro p w h; exact h
+  le_trans := by intro p q r hpq hqr w hp; exact hqr w (hpq w hp)
 
-def diamond (F : KripkeModel) (φ : F.W → Prop) (w : F.W) : Prop :=
-  ∃ w' : F.W, F.R w w' ∧ φ w'
+
+instance : PartialOrder (F.W → Prop) where
+  le_antisymm := by
+    intros p q hpq hqp
+    funext w
+    apply propext
+    exact ⟨hpq w, hqp w⟩
+
+instance : SemilatticeInf (F.W → Prop) where
+  inf := fun p q w => p w ∧ q w
+  inf_le_left := by intros p q w h; exact h.1
+  inf_le_right := by intros p q w h; exact h.2
+  le_inf := by intros p q r hp hr w h; exact ⟨hp w h, hr w h⟩
+
+
+instance : SemilatticeSup (F.W → Prop) where
+  sup := fun p q w => p w ∨ q w
+  le_sup_left := by intros p q w h; exact Or.inl h
+  le_sup_right := by intros p q w h; exact Or.inr h
+  sup_le := by intros p q r hp hq w h
+               cases h with
+               | inl hp' => exact hp w hp'
+               | inr hq' => exact hq w hq'
+
+instance : HasCompl (F.W → Prop) where
+  compl := fun p w => ¬ p w
+
+instance : BooleanAlgebra (F.W → Prop) where
+  inf := (· ⊓ ·)
+  sup := (· ⊔ ·)
+  compl := (·ᶜ)
+  top := ⊤
+  bot := ⊥
+  le := (· ≤ ·)
+  le_refl := by intro _ _ h; exact h
+  le_trans := by intro _ _ _ h₁ h₂ _ hp; exact h₂ _ (h₁ _ hp)
+  le_antisymm := by intro p q hpq hqp; funext w; apply propext; exact ⟨hpq w, hqp w⟩
+  le_sup_left := by intros _ _ _ h; exact Or.inl h
+  le_sup_right := by intros _ _ _ h; exact Or.inr h
+  sup_le := by intros _ _ _ h₁ h₂ _ h; cases h with
+    | inl h₁' => exact h₁ _ h₁'
+    | inr h₂' => exact h₂ _ h₂'
+  inf_le_left := by intros _ _ _ h; exact h.1
+  inf_le_right := by intros _ _ _ h; exact h.2
+  le_inf := by intros _ _ _ h₁ h₂ _ h; exact ⟨h₁ _ h, h₂ _ h⟩
+  le_sup_inf := by
+    intros x y z w h
+    let ⟨hxy, hxz⟩ := h
+    by_cases hx : x w
+    · exact Or.inl hx
+    · exact Or.inr ⟨hxy.resolve_left hx, hxz.resolve_left hx⟩
+  inf_compl_le_bot := by
+    intro p w h
+    exact h.2 h.1
+  top_le_sup_compl := by
+    intro p w _
+    by_cases hp : p w
+    · exact Or.inl hp
+    · exact Or.inr hp
+  le_top := by
+    intro p w hp; exact True.intro
+  bot_le := by
+    intro p w hbot; cases hbot
+
+  himp_eq := by
+    intros x y
+    funext w
+    apply propext
+    constructor
+    · intro h
+      by_cases hx : x w
+      · exact Or.inl (h hx)
+      · exact Or.inr hx
+    · intro h hx
+      cases h with
+      | inl hy => exact hy
+      | inr hnx => contradiction
+
+-- Modal operators
+def box (p : F.W → Prop) : F.W → Prop :=
+  fun w => ∀ w', F.R w w' → p w'
+
+def diamond (p : F.W → Prop) : F.W → Prop :=
+  fun w => ∃ w', F.R w w' ∧ p w'
+
+-- Monotonicity of □ and ◇
+theorem box_monotone {p q : F.W → Prop} (h : p ≤ q) : box p ≤ box q := by
+  intro w hw w' hr
+  exact h w' (hw w' hr)
+
+theorem diamond_monotone {p q : F.W → Prop} (h : p ≤ q) : diamond p ≤ diamond q := by
+  intro w ⟨w', hr, hp⟩
+  exact ⟨w', hr, h w' hp⟩
+
+
+
+
+
+
+
+
+
+-- instance: OrderBot (F.W → Prop) where
+--   bot_le := by intros _ _ ; simp
+
+-- instance: OrderTop (F.W → Prop) where
+--   top := (fun _ => True)
+--   le_top := by intro p w ; simp
+
+-- instance: HasCompl (F.W → Prop) where
+--   compl := fun p w => ∀ w', F.R w w' → p w'
+
+-- instance: Preorder (F.W → Prop) where
+--   le_refl := sorry
+--   le_trans := sorry
+
+-- instance: PartialOrder (F.W → Prop) where
+--   le_antisymm := sorry
+
+-- instance: SemilatticeInf (F.W → Prop) where
+--   inf := fun p q w => p w ∧ q w
+--   inf_le_left := by intros p q w ; simp ; intro _ _ ; assumption
+--   inf_le_right := sorry
+--   le_inf := sorry
+
+-- instance: SemilatticeSup (F.W → Prop) := by sorry
+
+-- -- instance: Lattice (F.W → Prop) where
+
+-- instance: GeneralizedHeytingAlgebra (F.W → Prop) where
+--   himp := fun p q w => ∀ w', F.R w w' → p w' → q w'
+--   le_himp_iff := sorry
+
+-- -- This is our main goal
+-- instance {F : KripkeFrame}: BooleanAlgebra (F.W → Prop) where
+--   himp_bot := sorry
+
+-- end
+
+-- def UnitFrame : KripkeFrame where
+--   W := Unit
+--   R := fun _ _ => True
+
+-- inductive TwoAtoms : Type
+--  | p : TwoAtoms
+--  | q : TwoAtoms
+
+-- def UnitModel : KripkeModel TwoAtoms where
+--   W := Unit
+--   R := fun _ _ => True
+--   V := fun (A : TwoAtoms) (_ : Unit) =>
+--         match A with
+--         | .p => True
+--         | .q => False
+
+-- inductive Formula (Atom : Type) where
+-- | true : Formula Atom
+-- | atom : Atom → Formula Atom
+-- | and : Formula Atom → Formula Atom → Formula Atom
+-- | imp : Formula Atom → Formula Atom → Formula Atom
+-- | box : Formula Atom → Formula Atom
+
+-- @[reducible, simp]
+-- def KripkeModel.valid {Atom} (M : KripkeModel Atom) (φ : Formula Atom) (w : M.W) : Prop :=
+-- match φ with
+-- | .true => True
+-- | .atom a => M.V a w
+-- | .and φ₁ φ₂ => M.valid φ₁ w ∧ M.valid φ₂ w
+-- | .imp φ₁ φ₂ => ∀ w', M.R w w' → M.valid φ₁ w' → M.valid φ₂ w'
+-- | .box φ => ∀ w', M.R w w' → M.valid φ w'
+
+-- inductive Proof {Atom : Type} : List (Formula Atom) → Formula Atom → Type where
+-- | hypo : ∀ Hypos φ, φ ∈ Hypos → Proof Hypos φ
+-- | true_I : ∀ Hypos, Proof Hypos .true
+-- | and_I : ∀ Hypos {φ₁ φ₂}, Proof Hypos φ₁ → Proof Hypos φ₂ → Proof Hypos (.and φ₁ φ₂)
+-- | and_E₁ : ∀ Hypos {φ₁ φ₂}, Proof Hypos (.and φ₁ φ₂) → Proof Hypos φ₁
+-- | imp_I : ∀ Hypos {φ₁ φ₂}, Proof (.cons φ₁ Hypos) φ₂ → Proof Hypos (.imp φ₁ φ₂)
+
+-- theorem KripkeModel.semanticValidity {Atom} (M : KripkeModel Atom) {Hypos} {φ : Formula Atom} (prf : Proof Hypos φ) (w : M.W) : M.valid φ w :=
+--   match prf with
+--   | .true_I => by simp
+--   | .and_I prf₁ prf₂ => ⟨semanticValidity M prf₁ w, semanticValidity M prf₂ w⟩
+--   | .and_E₁ prf' => (semanticValidity M prf' w).1
+
+-- -- Definition of modalities
+-- def box {Atom} (F : KripkeModel Atom) (φ : F.W → Prop) (w : F.W) : Prop :=
+--   ∀ w' : F.W, F.R w w' → φ w'
+
+-- def diamond {Atom} (F : KripkeModel Atom) (φ : F.W → Prop) (w : F.W) : Prop :=
+--   ∃ w' : F.W, F.R w w' ∧ φ w'
+
 
 
 
