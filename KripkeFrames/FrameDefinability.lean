@@ -2,17 +2,17 @@ import KripkeFrames.Basic
 
 ------------------------------------------------------------------------------------------------------------
 -- Semantic truth of a formula at a world
-def true_at (M : KripkeModel) (φ : M.W → Prop) (w : M.W) : Prop :=
+def true_at {Atom : Type} (M : KripkeModel Atom) (φ : M.W → Prop) (w : M.W) : Prop :=
   φ w
 
 -- Definition: A formula is true in a model if it's true at every world in it
-def true_in_model (M : KripkeModel) (φ : M.W → Prop) : Prop :=
+def true_in_model {Atom : Type} (M : KripkeModel Atom) (φ : M.W → Prop) : Prop :=
 
   ∀ w : M.W, true_at M φ w
 
 
 -- diamond M p w ↔ ¬ box M (¬ p) w
-theorem dual_valid (M : KripkeModel):
+theorem dual_valid {Atom : Type} (M : KripkeModel Atom):
   ∀ (p : M.W → Prop) (w : M.W),
     diamond M p w ↔ ¬ box M (fun v => ¬ p v) w :=
 by
@@ -33,19 +33,19 @@ by
 
 
 
-theorem modal_axiom_K_valid :
-  ∀ (F : KripkeModel) (A B : F.W → Prop) (w : F.W),
-    box F (λ w ↦ A w → B w) w →
-    box F A w →
-    box F B w := by {
-    intros F A B w h1 h2 v hR
-    exact (h1 v hR) (h2 v hR)
-    }
+theorem modal_axiom_K_valid {Atom : Type} :
+  ∀ (M : KripkeModel Atom) (A B : M.W → Prop) (w : M.W),
+    box M (λ w ↦ A w → B w) w →
+    box M A w →
+    box M B w :=
+by
+  intros M A B w h1 h2 v hR
+  exact (h1 v hR) (h2 v hR)
 
 
 
 theorem modal_axiom_T_valid
-  (F : KripkeModel)
+  {Atom : Type} (F : KripkeModel Atom)
   (h_refl : ∀ w : F.W, F.R w w) :
   ∀ (A : F.W → Prop) (w : F.W),
     box F A w → A w := by {
@@ -55,7 +55,7 @@ theorem modal_axiom_T_valid
     }
 
 theorem modal_dense_valid
-  (F : KripkeModel)
+  {Atom : Type} (F : KripkeModel Atom)
   (h_dense : ∀ w u : F.W, F.R w u → ∃ v : F.W, F.R w v ∧ F.R v u) :
   ∀ (A : F.W → Prop) (w : F.W),
     box F (box F A) w → box F A w := by {
@@ -70,7 +70,7 @@ theorem modal_dense_valid
     }
 
 theorem modal_axiom_4_valid
-  (F : KripkeModel)
+  {Atom : Type} (F : KripkeModel Atom)
   (h_trans : ∀ w v u : F.W, F.R w v → F.R v u → F.R w u) :
   ∀ (A : F.W → Prop) (w : F.W),
     box F A w → box F (box F A) w := by {
@@ -80,7 +80,7 @@ theorem modal_axiom_4_valid
     }
 
 theorem modal_axiom_D_valid
-  (F : KripkeModel)
+  {Atom : Type} (F : KripkeModel Atom)
   (h_serial : ∀ w : F.W, ∃ v : F.W, F.R w v) :
   ∀ (A : F.W → Prop) (w : F.W),
     box F A w → diamond F A w := by {
@@ -91,7 +91,7 @@ theorem modal_axiom_D_valid
     }
 
 theorem modal_axiom_B_valid
-  (F : KripkeModel)
+  {Atom : Type} (F : KripkeModel Atom)
   (h_symm : ∀ w v, F.R w v → F.R v w) :
   ∀ (A : F.W → Prop) (w : F.W),
     A w → box F (diamond F A) w := by
@@ -101,7 +101,7 @@ theorem modal_axiom_B_valid
 
 
 theorem modal_axiom_5_valid
-  (F : KripkeModel)
+  {Atom : Type} (F : KripkeModel Atom)
   (h_euclid : ∀ w u v : F.W, F.R w u → F.R w v → F.R u v) :
   ∀ (A : F.W → Prop) (w : F.W),
     diamond F A w → box F (diamond F A) w := by
@@ -116,8 +116,8 @@ theorem modal_axiom_5_valid
 
 
 -- Frame validity definition: φ is valid on frame F if φ holds in every model and every world on F
-def valid_on_frame (F : KripkeFrame) (φ : ∀ (M : KripkeModel), M.W → Prop) : Prop :=
-  ∀ (V : F.W → Prop → Prop) (w : F.W), φ {F with V := V} w
+def valid_on_frame (F : KripkeFrame) (φ : ∀ (M : KripkeModel Unit), M.W → Prop) : Prop :=
+  ∀ (V : Unit → F.W → Prop) (w : F.W), φ {F with V := V} w
 
 
 -- https://philosophy.stackexchange.com/questions/15019/proof-of-the-reflexivity-of-the-accessibility-relation
@@ -181,7 +181,7 @@ def valid_on_frame (F : KripkeFrame) (φ : ∀ (M : KripkeModel), M.W → Prop) 
 
 
 theorem valid_D_implies_serial
-  (M : KripkeModel)
+  {Atom : Type} (M : KripkeModel Atom)
   (valid_D : ∀ (p : M.W → Prop) (w : M.W), box M p w → diamond M p w) :
   ∀ (w : M.W), ∃ v : M.W, M.R w v :=
 by
@@ -216,7 +216,7 @@ by
 
 
 theorem valid_T_implies_reflexive
-  (M : KripkeModel)
+  {Atom : Type} (M : KripkeModel Atom)
   (valid_T : ∀ (p : M.W → Prop) (w : M.W), box M p w → p w) :
   ∀ w : M.W, M.R w w :=
 by
@@ -258,7 +258,7 @@ by
 
 
 theorem valid_B_implies_symmetric
-(M : KripkeModel)
+{Atom : Type} (M : KripkeModel Atom)
   (valid_B : ∀ (p : M.W → Prop) (w : M.W), p w → box M (diamond M p) w) :
   ∀ u v : M.W, M.R u v → M.R v u :=
 by
@@ -313,7 +313,7 @@ by
 
 -- axiom 4 => transitivity
 theorem valid_4_implies_transitive
-(M : KripkeModel)
+{Atom : Type} (M : KripkeModel Atom)
   (valid_4 : ∀ (p : M.W → Prop) (w : M.W), box M p w → box M (box M p) w) :
   ∀ x y z : M.W, M.R x y → M.R y z → M.R x z :=
 by
@@ -355,7 +355,7 @@ by
 
 -- axiom 5 => euclidean
 theorem valid_5_implies_euclidean
-(M : KripkeModel)
+{Atom : Type} (M : KripkeModel Atom)
   (valid_5 : ∀ (p : M.W → Prop) (w : M.W), diamond M p w → box M (diamond M p) w) :
   ∀ w u v : M.W, M.R w u → M.R w v → M.R u v :=
 by

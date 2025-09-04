@@ -1,6 +1,8 @@
 import Mathlib.Tactic
 import Mathlib.Order.BooleanAlgebra
 import Init.System
+import Init.Data.List.Basic
+import Init.Prelude
 
 
 -- Definition of Kripke frame
@@ -143,25 +145,111 @@ instance : BooleanAlgebra (F.W → Prop) where
       | inl hy => exact hy
       | inr hnx => contradiction
 
--- Modal operators
-def box (p : F.W → Prop) : F.W → Prop :=
-  fun w => ∀ w', F.R w w' → p w'
+-- -- Modal operators
+-- def box (p : F.W → Prop) : F.W → Prop :=
+--   fun w => ∀ w', F.R w w' → p w'
 
-def diamond (p : F.W → Prop) : F.W → Prop :=
-  fun w => ∃ w', F.R w w' ∧ p w'
+-- def diamond (p : F.W → Prop) : F.W → Prop :=
+--   fun w => ∃ w', F.R w w' ∧ p w'
 
--- Monotonicity of □ and ◇
-theorem box_monotone {p q : F.W → Prop} (h : p ≤ q) : box p ≤ box q := by
-  intro w hw w' hr
-  exact h w' (hw w' hr)
+-- -- Monotonicity of □ and ◇
+-- theorem box_monotone {p q : F.W → Prop} (h : p ≤ q) : box p ≤ box q := by
+--   intro w hw w' hr
+--   exact h w' (hw w' hr)
 
-theorem diamond_monotone {p q : F.W → Prop} (h : p ≤ q) : diamond p ≤ diamond q := by
-  intro w ⟨w', hr, hp⟩
-  exact ⟨w', hr, h w' hp⟩
-
-
+-- theorem diamond_monotone {p q : F.W → Prop} (h : p ≤ q) : diamond p ≤ diamond q := by
+--   intro w ⟨w', hr, hp⟩
+--   exact ⟨w', hr, h w' hp⟩
 
 
+
+
+def UnitFrame : KripkeFrame where
+  W := Unit
+  R := fun _ _ => True
+
+inductive TwoAtoms : Type
+ | p : TwoAtoms
+ | q : TwoAtoms
+
+def UnitModel : KripkeModel TwoAtoms where
+  W := Unit
+  R := fun _ _ => True
+  V := fun (A : TwoAtoms) (_ : Unit) =>
+        match A with
+        | .p => True
+        | .q => False
+
+inductive Formula (Atom : Type) where
+| true : Formula Atom
+| atom : Atom → Formula Atom
+| and : Formula Atom → Formula Atom → Formula Atom
+| imp : Formula Atom → Formula Atom → Formula Atom
+| box : Formula Atom → Formula Atom
+
+@[reducible, simp]
+def KripkeModel.valid {Atom} (M : KripkeModel Atom) (φ : Formula Atom) (w : M.W) : Prop :=
+match φ with
+| .true => True
+| .atom a => M.V a w
+| .and φ₁ φ₂ => M.valid φ₁ w ∧ M.valid φ₂ w
+| .imp φ₁ φ₂ => (M.valid φ₁ w → M.valid φ₂ w) -- | .imp φ₁ φ₂ => ∀ w', M.R w w' → M.valid φ₁ w' → M.valid φ₂ w'
+| .box φ => ∀ w', M.R w w' → M.valid φ w'
+
+inductive Proof {Atom : Type} : List (Formula Atom) → Formula Atom → Type where
+| hypo : ∀ Hypos φ, φ ∈ Hypos → Proof Hypos φ
+| true_I : ∀ Hypos, Proof Hypos .true
+| and_I : ∀ Hypos {φ₁ φ₂}, Proof Hypos φ₁ → Proof Hypos φ₂ → Proof Hypos (.and φ₁ φ₂)
+| and_E₁ : ∀ Hypos {φ₁ φ₂}, Proof Hypos (.and φ₁ φ₂) → Proof Hypos φ₁
+| imp_I : ∀ Hypos {φ₁ φ₂}, Proof (.cons φ₁ Hypos) φ₂ → Proof Hypos (.imp φ₁ φ₂)
+
+-- Environment: maps each hypothesis in Hypos and world w to its validity
+def Env {Atom} (M : KripkeModel Atom) (Hypos : List (Formula Atom)) :=
+  ∀ φ (h : φ ∈ Hypos) (w : M.W), M.valid φ w
+
+theorem KripkeModel.semanticValidity {Atom} (M : KripkeModel Atom) {Hypos}
+  {φ : Formula Atom} (env : Env M Hypos) (prf : Proof Hypos φ) (w : M.W) : M.valid φ w :=
+match prf with
+| .hypo _ φ h => env φ h w
+| .true_I _ => True.intro
+| .and_I _ prf₁ prf₂ => ⟨semanticValidity M env prf₁ w, semanticValidity M env prf₂ w⟩
+| .and_E₁ _ prf' => (semanticValidity M env prf' w).1
+| @Proof.imp_I _ Hypos φ₁ φ₂ prf' =>
+  fun hw1 =>
+    let env' : Env M (φ₁ :: Hypos) := fun ψ h w'' =>
+      match h with
+      | List.Mem.head _ => env ψ sorry w'' -- hw1
+      | List.Mem.tail _ h' => env ψ h' w''
+    semanticValidity M env' prf' w
+    -- fun w' hR hwφ₁ =>
+    --   let env' : Env M (φ₁ :: Hypos) :=
+    --     fun ψ h w'' =>
+    --       match h with
+    --       | List.Mem.head _ => by rw [rfl]; exact hwφ₁
+    --       | List.Mem.tail _ h' =>
+    --           env ψ h' w''
+    --   semanticValidity M env' prf' w'
+
+-- theorem KripkeModel.semanticValidity {Atom} (M : KripkeModel Atom) {Hypos} {φ : Formula Atom} (prf : Proof Hypos φ) (w : M.W) : M.valid φ w :=
+--   match prf with
+--   | .hypo _ φ _ => by
+--     match φ with
+--     | .atom a =>  sorry
+--     | .true  => simp
+--     | .box _ => sorry
+--     | .imp _ _ => sorry
+--     | .and _ _ => sorry
+--   | .true_I _ => by simp
+--   | .and_I _ prf₁ prf₂ => ⟨semanticValidity M prf₁ w, semanticValidity M prf₂ w⟩
+--   | .and_E₁ _ prf' => (semanticValidity M prf' w).1
+--   | .imp_I _ prf' =>  fun w' hr hw => KripkeModel.semanticValidity M prf' w'  -- recursive call
+
+-- Definition of modalities
+def box {Atom} (F : KripkeModel Atom) (φ : F.W → Prop) (w : F.W) : Prop :=
+  ∀ w' : F.W, F.R w w' → φ w'
+
+def diamond {Atom} (F : KripkeModel Atom) (φ : F.W → Prop) (w : F.W) : Prop :=
+  ∃ w' : F.W, F.R w w' ∧ φ w'
 
 
 

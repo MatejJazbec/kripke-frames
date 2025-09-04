@@ -6,10 +6,36 @@ KripkeFrame_is_serial
 KripkeFrame_is_dense
 KripkeFrame_is_euclidean
 KripkeModel
+
+F
+Bot
+Top
+LE
+Preorder
+PartianOrder
+SemilatticeInf
+SemilatticeSup
+HasCompl
+BooleanAlgebra
+UnitFrame
+TwoAtoms
+UnitModel
+Formula
+KripkeModel.valid
+Proof
+Env
+KripkeModel.semanticValidity
+
 box
 diamond
+# box_monotone
+# diamond_monotone
+
 World
 example_frame
+
+true_at
+true_in_model
 dual_valid
 modal_axiom_K_valid
 modal_axiom_T_valid
@@ -18,9 +44,9 @@ modal_axiom_4_valid
 modal_axiom_D_valid
 modal_axiom_B_valid
 modal_axiom_5_valid
+valid_on_frame
 valid_D_implies_serial
 valid_T_implies_reflexive
 valid_B_implies_symmetric
 valid_4_implies_transitive
 valid_5_implies_euclidean
-true_in_model
