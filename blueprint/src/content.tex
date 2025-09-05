@@ -15,7 +15,7 @@
 % can start with a \section or \chapter for instance.
 
 \begin{abstract}
-    We outline a plan of formalization for Kripke frames, define the modal operators $\square$, $\diamond$ and characterise some of the most relevant modal logic axioms, Boolean algebra structure, semantic soundness. Time permitting, we will formalize some examples.
+    We outline a plan of formalization for Kripke frames, define the modal operators $\square$, $\diamond$ and characterise some of the most relevant modal logic axioms, syntax, Boolean algebra structure, semantic soundness. Time permitting, we will formalize some examples.
   \end{abstract}
   
   
@@ -151,6 +151,28 @@ the algebra of propositions:
     (\Diamond p)(w) &\iff \exists w' \in W,\; Rww' \wedge p(w').
   \end{align*}
   Both $\Box$ and $\Diamond$ are monotone with respect to~$\leq$.
+
+
+\subsection{Syntax of Formulas}
+
+We define the set of formulas over a given set of atomic propositions $\mathrm{Atom}$ inductively.  
+
+\begin{definition}
+    \label{formulas}
+  %
+  \lean{thm:semantic-soundness, truth-of-formula}
+  \leanok
+  %\uses{}
+  %
+The set of \emph{formulas}, denoted $\mathcal{F}(\mathrm{Atom})$, is defined as follows:
+\begin{enumerate}
+  \item For each atomic proposition $a \in \mathrm{Atom}$, $\mathtt{atom}\ a \in \mathcal{F}(\mathrm{Atom})$.
+  \item $\top$ (\texttt{true}) and $\bot$ (\texttt{bot}) are formulas representing truth and falsity.
+  \item If $\phi, \psi \in \mathcal{F}(\mathrm{Atom})$, then $\phi \wedge \psi$ (\texttt{and}) and $\phi \to \psi$ (\texttt{imp}) are formulas.
+  \item If $\phi \in \mathcal{F}(\mathrm{Atom})$, then $\Box \phi$ (\texttt{box}) is a formula. The possibility operator is defined as $\Diamond \phi := \neg \Box \neg \phi$.
+\end{enumerate}
+\end{definition}
+This inductive definition generates all formulas of the basic modal language and provides the foundation for defining their semantics and proofs in Kripke models.
 
 
 
