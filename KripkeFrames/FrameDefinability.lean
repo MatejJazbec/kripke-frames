@@ -193,26 +193,7 @@ by
   simp only [diamond] at diamond_true
   have exists_R := Exists.imp (fun v ⟨hRwv, _⟩ => hRwv) diamond_true
   exact no_succ exists_R
-      -- {F : KripkeFrame}
-  -- (valid_D : ∀ (M : KripkeModel), M.toKripkeFrame = F → ∀ (p : M.W → Prop) (w : M.W), box M p w → diamond M p w) :
-  -- ∀ w : F.W, ∃ v : F.W, F.R w v := by
-  --   intro w
-  --   by_contra no_succ
-  --   let M : KripkeModel := {
-  --     W := F.W,
-  --     R := F.R,
-  --     V := fun _ _ ↦ false
-  --   }
-  --   have hM_eq : M.toKripkeFrame = F := rfl
-  --   let p : M.W → Prop := fun _ ↦ true
-  --   have box_true : box M p w := by
-  --       intro v hRwv
-  --       trivial
 
-  --   have diamond_true := valid_D M hM_eq p w box_true
-  --   simp only [diamond] at diamond_true
-  --   have exists_R := Exists.imp (fun v ⟨hRwv, _⟩ => hRwv) diamond_true
-  --   exact no_succ exists_R
 
 
 theorem valid_T_implies_reflexive
@@ -227,34 +208,6 @@ by
   have box_p_w : box M p w := by intros v hR; exact hR
   -- Apply validity of T: box p w → p w
   exact valid_T p w box_p_w
-
---   {F : KripkeFrame}
---   (valid_T : ∀ (M : KripkeModel), M.toKripkeFrame = F →
---               ∀ (p : M.W → Prop) (w : M.W), box M p w → p w) :
---   ∀ w : F.W, F.R w w :=
--- by {
---   intro w
---   -- Define model M based on frame F with valuation p(x) := R w x
---   let M : KripkeModel := {
---     W := F.W,
---     R := F.R,
---     V := fun x (prop : Prop) =>
---       -- We ignore prop and just use a fixed predicate p := fun x => R w x
---       -- So interpret p as a predicate, say p = True, all others False
---       if prop = True then F.R w x else False
---   }
---   -- Define p as predicate p(x) := R w x
---   let p : M.W → Prop := fun x => F.R w x
---   -- box M p w means ∀ v, R w v → p v, which is true because p v = R w v
---   have box_p_w : box M p w := by {
---     intro v hRwv
---     exact hRwv
---   }
---   -- Apply the hypothesis: from box p w, p w holds
---   have pw : p w := valid_T M rfl p w box_p_w
---   -- p w := R w w, done
---   exact pw
--- }
 
 
 theorem valid_B_implies_symmetric
@@ -276,41 +229,6 @@ by
   obtain ⟨w', hRvw', hpw'⟩ := diamond_p_v
   exact hpw' hRvw' -- contradiction
 
---   {F : KripkeFrame}
---   (valid_B : ∀ (M : KripkeModel), M.toKripkeFrame = F →
---               ∀ (p : M.W → Prop) (w : M.W),
---                 p w → box M (diamond M p) w) :
---   ∀ u v : F.W, F.R u v → F.R v u :=
--- by {
---   intros u v hRuv
---   -- Define valuation V so that p(w) := ¬ R v w
---   let M : KripkeModel := {
---     W := F.W,
---     R := F.R,
---     V := fun x (prop : Prop) =>
---       if prop = True then
---         -- interpret proposition p as ¬ R v x
---         ¬ F.R v x
---       else
---         False
---   }
---   let p : M.W → Prop := fun w => ¬ F.R v w
---   -- Assume p u (i.e. ¬ R v u)
---   by_contra no_sym
---   have pu : p u := no_sym
---   -- From valid_B: if p u holds then box (diamond p) u holds
---   have box_diamond_p_u : box M (diamond M p) u :=
---     valid_B M rfl p u pu
---   -- By definition of box, ∀ w, if R u w then diamond p holds at w
---   -- In particular, for w = v, since R u v = hRuv
---   have diamond_p_v : diamond M p v :=
---     box_diamond_p_u v hRuv
---   -- By definition of diamond, ∃ w', R v w' ∧ p w'
---   obtain ⟨w', hRvw', hpw'⟩ := diamond_p_v
---   have contradiction : False := hpw' hRvw'
---   exact contradiction
--- }
-
 -- axiom 4 => transitivity
 theorem valid_4_implies_transitive
 {Atom : Type} (M : KripkeModel Atom)
@@ -325,33 +243,6 @@ by
   have box_p_y := box_box_p_x y hxy
   have : p z := box_p_y z hyz
   exact h_not_xz this
---   (valid_4 : ∀ (F : KripkeFrame) (M : KripkeModel),
---       M.toKripkeFrame = F →
---       ∀ (p : M.W → Prop) (w : M.W),
---         box M p w → box M (box M p) w) :
---   ∀ (F : KripkeFrame), ∀ x y z : F.W, F.R x y → F.R y z → F.R x z :=
--- by
---   intros F x y z hxy hyz
---   by_contra h_not_xz
---   -- Define model M where p w := F.R x w
---   let M : KripkeModel :=
---     { W := F.W,
---       R := F.R,
---       V := fun w φ ↦ if φ = True then F.R x w else False }
---   let p : M.W → Prop := fun w ↦ F.R x w
---   have hM_eq : M.toKripkeFrame = F := rfl
---   -- Show box M p x holds
---   have box_p_x : box M p x := by
---     intros w' hR
---     exact hR
---   -- Use validity of axiom 4
---   have box_box_p_x := valid_4 F M hM_eq p x box_p_x
---   -- Then box p must hold at y since R x y
---   have box_p_y := box_box_p_x y hxy
---   -- Then p must hold at z since R y z
---   have : p z := box_p_y z hyz
---   simp [p] at this
---   exact h_not_xz this
 
 -- axiom 5 => euclidean
 theorem valid_5_implies_euclidean
@@ -368,26 +259,3 @@ by
   obtain ⟨x, hRux, px⟩ := diamond_p_u
   rw [px] at hRux
   exact h_not_Ruv hRux
-    --   (∀ (F : KripkeFrame) (M : KripkeModel),
-    --     M.toKripkeFrame = F →
-    --     ∀ (p : M.W → Prop) (w : M.W),
-    --       diamond M p w → box M (diamond M p) w) →
-    --   ∀ (F : KripkeFrame), ∀ (w u v : F.W), F.R w u → F.R w v → F.R u v :=
-    -- by
-    --   intros valid_5 F w u v hRwu hRwv
-    --   by_contra h_not_Ruv
-
-    --   let M : KripkeModel :=
-    --     { W := F.W
-    --       R := F.R
-    --       V := fun x φ ↦ if φ = True then x = v else False }
-    --   let p : M.W → Prop := fun x ↦ x = v
-    --   have hM_eq : M.toKripkeFrame = F := rfl
-    --   have diamond_p_w : diamond M p w :=
-    --     ⟨v, hRwv, by simp [p]⟩
-    --   have box_diamond_p_w := valid_5 F M hM_eq p w diamond_p_w
-    --   have diamond_p_u := box_diamond_p_w u hRwu
-    --   rcases diamond_p_u with ⟨x, hRux, px⟩
-    --   simp [p] at px
-    --   rw [px] at hRux
-    --   exact h_not_Ruv hRux

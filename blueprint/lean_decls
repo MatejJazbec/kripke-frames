@@ -24,6 +24,7 @@ Formula
 KripkeModel.valid
 Proof
 Env
+KripkeModel.valid_monotone
 KripkeModel.semanticValidity
 
 box
