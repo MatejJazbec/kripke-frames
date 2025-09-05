@@ -204,8 +204,8 @@ We formalize a semantic soundness theorem:
 \begin{theorem}
     \label{thm:semantic-soundness}
   %
-  %\lean{}
-  \leanok
+  \lean{KripkeModel, modus-ponens-validity, valid-schema}
+  %\leanok
   \uses{KripkeModel, true-in-model}
   %
 If a formula $\phi$ has a proof in the deductive system from hypotheses $\Gamma$, then it is valid in any model $M$ at any world $w$:
@@ -235,7 +235,7 @@ $\Box p \to p$ is valid in the class of reflexive models.
 \begin{definition}
   \label{valid-in-class}
   \uses{def:kripke-model,true-in-model}
-  A formula $A$ is \emph{KripkeModel,valid in a class} $\mathcal{C}$ 
+  A formula $A$ is \emph{KripkeModel, valid in a class} $\mathcal{C}$ 
 of models if it is true in every model in $\mathcal{C}$ (i.e., true at every 
 world in every model in $\mathcal{C}$). If $A$ is valid in $\mathcal{C}$, we 
 write $\mathcal{C} \vDash A$, and we write $\vDash A$ if $A$ is valid in the 
@@ -280,6 +280,8 @@ The following schema, called the \emph{duality schema}, is valid:
 
 \begin{proposition}
   \label{substitution-validity}
+  \lean{thm:semantic-soundness}
+    \leanok
   \uses{valid-schema}
   A formula $A$ is valid iff all its substitution instances are.
   In other words, a schema is valid iff its characteristic formula is.
