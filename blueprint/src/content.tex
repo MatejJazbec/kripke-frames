@@ -176,28 +176,18 @@ $M, w \Vdash A$ for every $w \in W$.
 \subsection{Unit Frame and Two-Atom Model}
 
 A minimal example is provided:
-
-\begin{example}
-  \label{example:minimal}
-  %
-  %\lean{KripkeModel,true_in_model}
-  \leanok
-  \uses{KripkeModel}
-  %  
-
 \begin{itemize}
   \item Unit frame: $W = \{\star\}$, $R(\star,\star) = \text{True}$.
   \item Atomic propositions: $\mathrm{Atom} = \{\texttt{p}, \texttt{q}\}$.
   \item Unit model: $V(\texttt{p},\star) = \text{True}$, $V(\texttt{q},\star) = \text{False}$.
 \end{itemize}
-\end{example}
 
 Formulas are interpreted inductively, and the validity relation $M \Vdash \phi \text{ at } w$ matches the definition:
 
 \begin{definition}
   \label{def:eample}
   %
-  \lean{example:minimal}
+  %\lean{example:minimal}
   \leanok
   \uses{KripkeModel}
   %
@@ -216,7 +206,7 @@ We formalize a semantic soundness theorem:
 \begin{theorem}
     \label{thm:semantic-soundness}
   %
-  \lean{}
+  %\lean{}
   \leanok
   \uses{KripkeModel, true-in-model}
   %
