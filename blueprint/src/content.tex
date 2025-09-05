@@ -89,6 +89,73 @@ however, if $Rww$ holds (e.g., if $R$ is reflexive). If there is no $w'$
 such that $Rww'$, then $M, w \not\Vdash \Diamond A$, for any $A$.
 
 
+\section{Boolean Algebra of Propositions}
+
+Given a Kripke frame $F = \langle W, R \rangle$, we can regard every
+propositional predicate $p : W \to \{\top,\bot\}$ as a subset of $W$,
+namely the set of worlds where $p$ holds. These predicates carry the
+structure of a Boolean algebra:
+
+\begin{definition}
+  \label{def:boolean-structure}
+    %
+    %\lean{prop:boolean-algebra}
+    \leanok
+    \uses{KripkeFrame}
+    %
+
+  For a fixed frame $F$, the collection $\mathcal{P}(W)$ of
+  predicates $p : W \to \{\top,\bot\}$ admits the following Boolean
+  structure:
+  \begin{itemize}
+    \item $\bot = \emptyset$, $\top = W$,
+    \item $p \leq q \iff \forall w \in W,\; p(w) \Rightarrow q(w)$,
+    \item $(p \wedge q)(w) \iff p(w) \wedge q(w)$,
+    \item $(p \vee q)(w) \iff p(w) \vee q(w)$,
+    \item $(\neg p)(w) \iff \neg (p(w))$.
+  \end{itemize}
+\end{definition}
+
+\begin{proposition}
+  \label{prop:boolean-algebra}
+    %
+    %\lean{KripkeModel}
+    \leanok
+    \uses{def:boolean-structure}
+    %
+  With these operations, the set of predicates $W \to \{\top,\bot\}$
+  forms a Boolean algebra. In particular:
+  \begin{enumerate}
+    \item $(\mathcal{P}(W), \wedge, \vee, \neg, \top, \bot)$ satisfies
+          the axioms of a bounded distributive lattice,
+    \item every $p$ has a complement $\neg p$ with
+          $p \wedge \neg p = \bot$ and $p \vee \neg p = \top$.
+  \end{enumerate}
+\end{proposition}
+
+\begin{proof}
+  %
+    \label{proof:boolean-structure}
+  \leanok
+  %
+  Direct verification of the Boolean algebra laws, mirroring the
+  corresponding Lean instances (\texttt{Bot}, \texttt{Top},
+  \texttt{PartialOrder}, \texttt{SemilatticeInf},
+  \texttt{SemilatticeSup}, and \texttt{BooleanAlgebra}).
+\end{proof}
+
+\begin{remark}
+  In this Boolean setting, modal operators can be seen as operators on
+  the algebra of propositions:
+  \begin{align*}
+    (\Box p)(w) &\iff \forall w' \in W,\; Rww' \Rightarrow p(w'), \\
+    (\Diamond p)(w) &\iff \exists w' \in W,\; Rww' \wedge p(w').
+  \end{align*}
+  Both $\Box$ and $\Diamond$ are monotone with respect to~$\leq$.
+\end{remark}
+
+
+
 \subsection{Truth in a model}
 
 We will be interested in which formulas are true at every 
@@ -105,6 +172,59 @@ world in a given model. Let’s introduce a notation for this.
 $M = \langle W, R, V \rangle$, written $M \Vdash A$, iff 
 $M, w \Vdash A$ for every $w \in W$.
 \end{definition}
+
+\subsection{Unit Frame and Two-Atom Model}
+
+A minimal example is provided:
+
+\begin{example}
+  \label{example:minimal}
+  %
+  %\lean{KripkeModel,true_in_model}
+  \leanok
+  \uses{KripkeModel}
+  %  
+
+\begin{itemize}
+  \item Unit frame: $W = \{\star\}$, $R(\star,\star) = \text{True}$.
+  \item Atomic propositions: $\mathrm{Atom} = \{\texttt{p}, \texttt{q}\}$.
+  \item Unit model: $V(\texttt{p},\star) = \text{True}$, $V(\texttt{q},\star) = \text{False}$.
+\end{itemize}
+\end{example}
+
+Formulas are interpreted inductively, and the validity relation $M \Vdash \phi \text{ at } w$ matches the definition:
+
+\begin{definition}
+  \label{def:eample}
+  %
+  \lean{example:minimal}
+  \leanok
+  \uses{KripkeModel}
+  %
+\begin{itemize}
+  \item $\text{true}$ is always valid.
+  \item Atoms follow the valuation: $M \Vdash a\, w$ iff $V(a, w)$.
+  \item Boolean connectives are interpreted pointwise.
+  \item $\Box \phi$ holds at $w$ if $\phi$ holds at all $w'$ accessible from $w$.
+\end{itemize}
+\end{definition}
+
+\subsection{Semantic Soundness}
+
+We formalize a semantic soundness theorem:
+
+\begin{theorem}
+    \label{thm:semantic-soundness}
+  %
+  \lean{}
+  \leanok
+  \uses{KripkeModel, true-in-model}
+  %
+If a formula $\phi$ has a proof in the deductive system from hypotheses $\Gamma$, then it is valid in any model $M$ at any world $w$:
+\[
+\Gamma \vdash \phi \implies \forall M, w,\, M \Vdash \Gamma \Rightarrow M \Vdash \phi \text{ at } w.
+\]
+\end{theorem}
 
 \subsection{Validity}
 
