@@ -6,6 +6,11 @@ KripkeFrame_is_serial
 KripkeFrame_is_dense
 KripkeFrame_is_euclidean
 KripkeModel
+box
+diamond
+box_monotone
+diamond_monotone
+
 
 F
 Bot
@@ -24,13 +29,10 @@ Formula
 KripkeModel.valid
 Proof
 Env
-KripkeModel.valid_monotone
+EnvAt
+# KripkeModel.valid_monotone
 KripkeModel.semanticValidity
 
-box
-diamond
-# box_monotone
-# diamond_monotone
 
 World
 example_frame
